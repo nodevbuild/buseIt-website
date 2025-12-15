@@ -120,7 +120,7 @@ const FAQs = () => {
                                         >
                                             <span>{faq.title}</span>
                                             <img
-                                                src={expandedItem === faq.id ? "/FAQ's/up.svg" : "/FAQ's/down.svg"}
+                                                src={expandedItem === faq.id ? "/assets/faqs/up.svg" : "/assets/faqs/down.svg"}
                                                 alt={expandedItem === faq.id ? "Collapse" : "Expand"}
                                                 className="faq-icon"
                                             />

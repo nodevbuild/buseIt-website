@@ -7,7 +7,7 @@ const NavigationArrows = ({ onPrev, onNext }) => {
             {/* Up Arrow Button */}
             <button className="arrow-button" onClick={onPrev} aria-label="Previous">
                 <img
-                    src="/howitworksILLUSTRATIONS/arrows/upArrow.svg"
+                    src="/assets/howitworksILLUSTRATIONS/arrows/upArrow.svg"
                     alt="Previous"
                     className="arrow-icon"
                 />
@@ -16,7 +16,7 @@ const NavigationArrows = ({ onPrev, onNext }) => {
             {/* Down Arrow Button */}
             <button className="arrow-button" onClick={onNext} aria-label="Next">
                 <img
-                    src="/howitworksILLUSTRATIONS/arrows/downArrow.svg"
+                    src="/assets/howitworksILLUSTRATIONS/arrows/downArrow.svg"
                     alt="Next"
                     className="arrow-icon"
                 />

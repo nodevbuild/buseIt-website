@@ -4,7 +4,7 @@ import './StarsBadge.css';
 const StarsBadge = () => {
     return (
         <img
-            src="/howitworksILLUSTRATIONS/card1/productcard/stars.png"
+            src="/assets/howitworksILLUSTRATIONS/card1/productcard/stars.png"
             alt="Stars"
             className="stars-badge"
         />

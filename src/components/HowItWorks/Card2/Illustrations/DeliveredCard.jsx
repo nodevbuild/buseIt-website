@@ -8,7 +8,7 @@ const DeliveredCard = () => {
             <div className="card-content-group-delivered">
                 {/* Truck Icon */}
                 <img
-                    src="/howitworksILLUSTRATIONS/card2/components/truck-fast.png"
+                    src="/assets/howitworksILLUSTRATIONS/card2/components/truck-fast.png"
                     alt="Truck"
                     className="truck-icon"
                 />

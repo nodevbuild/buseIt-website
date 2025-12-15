@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
-import illustrationImg from '../../../assets/JoinWaitingList/illustration.png';
+const illustrationImg = "/assets/JoinWaitingList/illustration.png";
 import './JoinWaitingList.css';
 import './JoinWaitingList.mobile.css';
 
@@ -42,7 +42,7 @@ const JoinWaitingList = () => {
 
                         <div className="waitlist-avatar-group">
                             <img
-                                src="/JoinWaitingList/avatargroupcontainer.png"
+                                src="/assets/JoinWaitingList/avatargroupcontainer.png"
                                 alt="User avatars"
                                 className="avatar-group-image"
                             />

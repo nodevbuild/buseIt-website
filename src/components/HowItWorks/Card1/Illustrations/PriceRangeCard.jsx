@@ -6,7 +6,7 @@ const PriceRangeCard = () => {
         <div className="price-range-card">
             {/* Complete chart group - waveform, prices, text, line, all in one PNG */}
             <img
-                src="/howitworksILLUSTRATIONS/card1/productcard/Group 10 (1).png"
+                src="/assets/howitworksILLUSTRATIONS/card1/productcard/group-10.png"
                 alt="Price Range Chart"
                 className="chart-group"
             />

@@ -46,7 +46,7 @@ const HeroSection = () => {
                     >
                         Download The App
                         <img
-                            src="/assets/For Busy Users/arrow-circle-right (1).png"
+                            src="/assets/for-busy-users/arrow-circle-right.png"
                             alt="Arrow"
                             className="download-arrow-icon"
                         />
@@ -88,7 +88,7 @@ const HeroSection = () => {
                             className="badge-link"
                         >
                             <img
-                                src="/assets/Apple and google download/Download_on_the_App_Store_Badge.svg"
+                                src="/assets/app-store-badges/Download_on_the_App_Store_Badge.svg"
                                 alt="Download on App Store"
                                 className="app-badge apple-badge"
                             />
@@ -101,7 +101,7 @@ const HeroSection = () => {
                             className="badge-link"
                         >
                             <img
-                                src="/assets/Apple and google download/Google_Play_Store_badge_EN.svg"
+                                src="/assets/app-store-badges/Google_Play_Store_badge_EN.svg"
                                 alt="Get it on Google Play"
                                 className="app-badge google-badge"
                             />

@@ -13,7 +13,7 @@ const Card2 = () => {
             <div className="illustration-container-card2">
                 {/* Background Illustration */}
                 <img
-                    src="/howitworksILLUSTRATIONS/card2/components/illustration.png"
+                    src="/assets/howitworksILLUSTRATIONS/card2/components/illustration.png"
                     alt="Illustration"
                     className="background-illustration"
                 />
@@ -29,14 +29,14 @@ const Card2 = () => {
 
                 {/* Gift Box Decoration */}
                 <img
-                    src="/howitworksILLUSTRATIONS/card2/components/giftBox.png"
+                    src="/assets/howitworksILLUSTRATIONS/card2/components/giftBox.png"
                     alt="Gift Box"
                     className="gift-box-decoration"
                 />
 
                 {/* Carry Bag Decoration */}
                 <img
-                    src="/howitworksILLUSTRATIONS/card2/components/carryBag.png"
+                    src="/assets/howitworksILLUSTRATIONS/card2/components/carryBag.png"
                     alt="Shopping Bag"
                     className="carry-bag-decoration"
                 />

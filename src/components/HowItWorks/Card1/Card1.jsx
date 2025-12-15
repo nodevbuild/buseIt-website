@@ -16,7 +16,7 @@ const Card1 = () => {
 
                 {/* Illustration Person - LAYER 2 (in front of price card) */}
                 <img
-                    src="/howitworksILLUSTRATIONS/card1/productcard/illustartion.png"
+                    src="/assets/howitworksILLUSTRATIONS/card1/productcard/illustartion.png"
                     alt="Person Illustration"
                     className="illustration-image"
                 />
@@ -33,7 +33,7 @@ const Card1 = () => {
                 {/* Orange Circle Badge with "1" */}
                 <div className="badge-container">
                     <img
-                        src="/howitworksILLUSTRATIONS/card1/productcard/oneImage.png"
+                        src="/assets/howitworksILLUSTRATIONS/card1/productcard/oneImage.png"
                         alt="Step 1"
                         className="step-badge"
                     />

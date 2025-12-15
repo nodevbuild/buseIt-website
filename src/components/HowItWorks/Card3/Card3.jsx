@@ -9,21 +9,21 @@ const Card3 = () => {
             <div className="illustration-container-card3">
                 {/* Background Illustration */}
                 <img
-                    src="/howitworksILLUSTRATIONS/card3/components/illustration.png"
+                    src="/assets/howitworksILLUSTRATIONS/card3/components/illustration.png"
                     alt="Delivery Person Illustration"
                     className="card3-background-illustration"
                 />
 
                 {/* Track Your Order Card - Already tilted in PNG */}
                 <img
-                    src="/howitworksILLUSTRATIONS/card3/components/trackYourOrder.png"
+                    src="/assets/howitworksILLUSTRATIONS/card3/components/trackYourOrder.png"
                     alt="Track Your Order"
                     className="track-order-card"
                 />
 
                 {/* Secure Payment Card - Already tilted in PNG */}
                 <img
-                    src="/howitworksILLUSTRATIONS/card3/components/securePayment.png"
+                    src="/assets/howitworksILLUSTRATIONS/card3/components/securePayment.png"
                     alt="Secure Payment"
                     className="secure-payment-card"
                 />

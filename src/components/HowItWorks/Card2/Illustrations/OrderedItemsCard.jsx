@@ -8,7 +8,7 @@ const OrderedItemsCard = () => {
             <div className="card-content-group">
                 {/* Verify Icon */}
                 <img
-                    src="/howitworksILLUSTRATIONS/card2/components/verify.png"
+                    src="/assets/howitworksILLUSTRATIONS/card2/components/verify.png"
                     alt="Verify"
                     className="verify-icon"
                 />

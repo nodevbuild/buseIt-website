@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import illustrationImg from '../../../assets/404Screen/illustration.png';
+const illustrationImg = "/assets/404Screen/illustration.png";
 import './Error404.css';
 import './Error404.mobile.css';
 

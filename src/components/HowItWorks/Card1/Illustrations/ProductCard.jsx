@@ -8,7 +8,7 @@ const ProductCard = () => {
                 {/* Product Image */}
                 <div className="product-image-container">
                     <img
-                        src="/howitworksILLUSTRATIONS/card1/productcard/aestheticLamp.png"
+                        src="/assets/howitworksILLUSTRATIONS/card1/productcard/aestheticLamp.png"
                         alt="Aesthetic Lamp"
                         className="product-image"
                     />
@@ -34,7 +34,7 @@ const ProductCard = () => {
                         {/* Seller Info */}
                         <div className="seller-info">
                             <img
-                                src="/howitworksILLUSTRATIONS/card1/productcard/verifiedVector.svg"
+                                src="/assets/howitworksILLUSTRATIONS/card1/productcard/verifiedVector.svg"
                                 alt="Verified"
                                 className="verified-icon"
                             />
@@ -48,7 +48,7 @@ const ProductCard = () => {
 
                         <button className="like-btn">
                             <img
-                                src="/howitworksILLUSTRATIONS/card1/productcard/heartVector.svg"
+                                src="/assets/howitworksILLUSTRATIONS/card1/productcard/heartVector.svg"
                                 alt="Like"
                                 className="heart-icon"
                             />

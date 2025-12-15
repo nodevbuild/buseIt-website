@@ -32,7 +32,7 @@ const ForBusyUsers = () => {
             <div className="features-list-busy">
               {/* Feature 1 - Zero Hassle */}
               <div className="feature-item-busy">
-                <img src="/For Busy Users/convertshape-2.png" alt="Zero Hassle" className="feature-icon-busy" />
+                <img src="/assets/for-busy-users/convertshape-2.png" alt="Zero Hassle" className="feature-icon-busy" />
                 <div className="feature-text-busy">
                   <h4 className="feature-title-busy">Zero Hassle</h4>
                   <p className="feature-description-busy">
@@ -43,7 +43,7 @@ const ForBusyUsers = () => {
 
               {/* Feature 2 - Save Time */}
               <div className="feature-item-busy">
-                <img src="/For Busy Users/timer.png" alt="Save Time" className="feature-icon-busy" />
+                <img src="/assets/for-busy-users/timer.png" alt="Save Time" className="feature-icon-busy" />
                 <div className="feature-text-busy">
                   <h4 className="feature-title-busy">Save Time</h4>
                   <p className="feature-description-busy">
@@ -54,7 +54,7 @@ const ForBusyUsers = () => {
 
               {/* Feature 3 - Safe & Secure */}
               <div className="feature-item-busy">
-                <img src="/For Busy Users/shield-tick.png" alt="Safe & Secure" className="feature-icon-busy" />
+                <img src="/assets/for-busy-users/shield-tick.png" alt="Safe & Secure" className="feature-icon-busy" />
                 <div className="feature-text-busy">
                   <h4 className="feature-title-busy">Safe & Secure</h4>
                   <p className="feature-description-busy">
@@ -69,14 +69,14 @@ const ForBusyUsers = () => {
           <div className="illustration-container-busy">
             {/* Background SVG */}
             <img
-              src="/For Busy Users/BACKGROUND.svg"
+              src="/assets/for-busy-users/BACKGROUND.svg"
               alt="Background"
               className="background-illustration-busy"
             />
 
             {/* Person Illustration */}
             <img
-              src="/For Busy Users/OBJECTS.png"
+              src="/assets/for-busy-users/OBJECTS.png"
               alt="Person"
               className="person-illustration-busy"
             />
@@ -87,7 +87,7 @@ const ForBusyUsers = () => {
         <button className="cta-button-busy">
           <span className="cta-button-text">Let<span className="cta-button-text-bold">BUSEit</span>handle it.</span>
           <img
-            src="/For Busy Users/arrow-circle-right (1).png"
+            src="/assets/for-busy-users/arrow-circle-right.png"
             alt="Arrow"
             className="cta-button-arrow"
           />

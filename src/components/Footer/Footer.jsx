@@ -18,7 +18,7 @@ const Footer = () => {
                         {/* Left Section - Logo & Tagline */}
                         <div className="footer-left">
                             <img
-                                src="/logos/BUSEit..svg"
+                                src="/assets/logos/BUSEit..svg"
                                 alt="BUSEit Logo"
                                 className="footer-logo"
                             />
@@ -32,19 +32,19 @@ const Footer = () => {
                             {/* Navigation Links Column */}
                             <div className="footer-nav-column">
                                 <a href="#about" className="footer-link">
-                                    <img src="/footer/ABOUTBUSEit.png" alt="" className="footer-link-icon" />
+                                    <img src="/assets/footer/ABOUTBUSEit.png" alt="" className="footer-link-icon" />
                                     <span>About BUSEit</span>
                                 </a>
                                 <Link to="/join-waitlist" className="footer-link">
-                                    <img src="/footer/contactsupport.png" alt="" className="footer-link-icon" />
+                                    <img src="/assets/footer/contactsupport.png" alt="" className="footer-link-icon" />
                                     <span>Contact Support</span>
                                 </Link>
                                 <a href="#terms" className="footer-link">
-                                    <img src="/footer/termsandcondition.png" alt="" className="footer-link-icon" />
+                                    <img src="/assets/footer/termsandcondition.png" alt="" className="footer-link-icon" />
                                     <span>Terms & Conditions</span>
                                 </a>
                                 <a href="#privacy" className="footer-link">
-                                    <img src="/footer/privacypolicy.png" alt="" className="footer-link-icon" />
+                                    <img src="/assets/footer/privacypolicy.png" alt="" className="footer-link-icon" />
                                     <span>Privacy Policy</span>
                                 </a>
                             </div>
@@ -52,19 +52,19 @@ const Footer = () => {
                             {/* Social Media Links Column */}
                             <div className="footer-social-column">
                                 <a href="https://www.instagram.com/buseit.club/" target="_blank" rel="noopener noreferrer" className="footer-link">
-                                    <img src="/footer/instagram.png" alt="" className="footer-link-icon" />
+                                    <img src="/assets/footer/instagram.png" alt="" className="footer-link-icon" />
                                     <span>Instagram</span>
                                 </a>
                                 <a href="https://www.facebook.com/buseit.club" target="_blank" rel="noopener noreferrer" className="footer-link">
-                                    <img src="/footer/facebook.png" alt="" className="footer-link-icon" />
+                                    <img src="/assets/footer/facebook.png" alt="" className="footer-link-icon" />
                                     <span>Facebook</span>
                                 </a>
                                 <a href="https://www.linkedin.com/company/buseit" target="_blank" rel="noopener noreferrer" className="footer-link">
-                                    <img src="/footer/linkedin.png" alt="" className="footer-link-icon" />
+                                    <img src="/assets/footer/linkedin.png" alt="" className="footer-link-icon" />
                                     <span>LinkedIn</span>
                                 </a>
                                 <a href="mailto:support@buseit.club" className="footer-link">
-                                    <img src="/footer/support@buseit.club.png" alt="" className="footer-link-icon" />
+                                    <img src="/assets/footer/support@buseit.club.png" alt="" className="footer-link-icon" />
                                     <span>support@buseit.club</span>
                                 </a>
                             </div>

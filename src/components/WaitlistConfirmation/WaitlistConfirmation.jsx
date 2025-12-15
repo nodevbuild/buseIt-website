@@ -1,5 +1,5 @@
 import React from 'react';
-import illustrationImg from '../../../assets/WaitListConfirmation/illustration.png';
+const illustrationImg = "/assets/WaitListConfirmation/illustration.png";
 import './WaitlistConfirmation.css';
 import './WaitlistConfirmation.mobile.css';
 

@@ -8,7 +8,7 @@ const PickedUpCard = () => {
             <div className="card-content-group-pickup">
                 {/* Box Icon */}
                 <img
-                    src="/howitworksILLUSTRATIONS/card2/components/box.png"
+                    src="/assets/howitworksILLUSTRATIONS/card2/components/box.png"
                     alt="Box"
                     className="box-icon"
                 />
