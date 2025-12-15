@@ -1,0 +1,436 @@
+/* ============================================
+   FAQ Section - Mobile Responsive
+   iPhone 16 - Exact Figma Specifications
+   Updated: 2025-12-15 23:15
+   ============================================ */
+
+@media (max-width: 768px) {
+
+    /* Section Container */
+    .faqs-section {
+        padding: 60px 8px !important;
+        margin-top: 60px !important;
+    }
+
+    /* Main Container */
+    .faqs-section .faqs-container {
+        width: calc(100vw - 16px) !important;
+        max-width: 100%;
+        height: auto !important;
+
+        /* Padding */
+        padding: 20px 12px !important;
+
+        /* Layout */
+        display: flex !important;
+        flex-direction: column !important;
+        align-items: center !important;
+        gap: 30px !important;
+    }
+
+    /* ===== Pill Badge ===== */
+    .faqs-section .section-pill-faqs {
+        /* Exact Figma dimensions */
+        width: 183px !important;
+        height: 22px !important;
+
+        /* Styling */
+        border-radius: 1000px !important;
+        border: 0.5px solid #331000 !important;
+        background: transparent !important;
+
+        /* Padding */
+        padding: 5px 10px !important;
+
+        /* Gap */
+        gap: 10px;
+
+        /* Margin bottom for 30px gap */
+        margin-bottom: 0 !important;
+    }
+
+    .faqs-section .pill-text-faqs {
+        /* Exact Figma dimensions */
+        width: 163px !important;
+        height: 12px !important;
+
+        /* Typography */
+        font-family: 'SF Pro', sans-serif !important;
+        font-weight: 510 !important;
+        font-size: 12px !important;
+        line-height: 100% !important;
+        letter-spacing: 0% !important;
+        text-transform: capitalize !important;
+        color: #331000 !important;
+    }
+
+    /* ===== Content Row ===== */
+    .faqs-section .faq-content-row {
+        width: 100% !important;
+        max-width: 355px;
+
+        /* Layout - Column for mobile */
+        display: flex !important;
+        flex-direction: column !important;
+        align-items: center !important;
+        gap: 30px !important;
+    }
+
+    /* ===== Right Content (Heading) - Display First ===== */
+    .faqs-section .faq-right-content {
+        width: 355px !important;
+        max-width: 100%;
+        height: auto !important;
+
+        /* Display first */
+        order: 1 !important;
+
+        /* Layout */
+        display: flex !important;
+        flex-direction: column !important;
+        align-items: flex-start !important;
+        gap: 0 !important;
+
+        /* Reset desktop margin */
+        margin-top: 0 !important;
+    }
+
+    /* Heading - LEFT ALIGNED */
+    .faqs-section .faq-right-heading {
+        /* Exact Figma dimensions */
+        width: 355px !important;
+        max-width: 100%;
+        height: 48px !important;
+
+        /* Typography */
+        font-family: 'SF Pro', sans-serif !important;
+        font-weight: 400 !important;
+        font-size: 24px !important;
+        line-height: 100% !important;
+        letter-spacing: 0% !important;
+        text-transform: capitalize !important;
+        color: #000000 !important;
+
+        /* LEFT ALIGNED - not center */
+        text-align: left !important;
+
+        /* Reset */
+        margin: 0 !important;
+    }
+
+    /* Bold Span */
+    .faqs-section .faq-heading-bold {
+        /* Typography */
+        font-family: 'SF Pro', sans-serif !important;
+        font-weight: 700 !important;
+        font-size: 24px !important;
+        line-height: 100% !important;
+        letter-spacing: 0% !important;
+        text-transform: capitalize !important;
+        color: #331000 !important;
+
+        /* Display inline */
+        display: inline !important;
+    }
+
+    /* Hide Description */
+    .faqs-section .faq-right-description {
+        display: none !important;
+    }
+
+    /* Hide CTA Button on mobile (shown at bottom instead) */
+    .faqs-section .faq-right-content .faq-cta-pill {
+        display: none !important;
+    }
+
+    /* ===== Left Column (Slider + Accordion) - Display Second ===== */
+    .faqs-section .faq-left-column {
+        width: 355px !important;
+        max-width: 100%;
+
+        /* Display second */
+        order: 2 !important;
+
+        /* Layout */
+        display: flex !important;
+        flex-direction: column !important;
+        gap: 30px !important;
+    }
+
+    /* ===== Toggle Slider ===== */
+    .faqs-section .toggle-slider {
+        /* Exact Figma dimensions */
+        width: 355px !important;
+        max-width: 100%;
+        height: 66px !important;
+
+        /* Styling */
+        background: rgba(255, 255, 255, 0.3) !important;
+        border-radius: 100px !important;
+        border: 1px solid #CCCCCC !important;
+
+        /* Padding */
+        padding: 5px !important;
+
+        /* Display */
+        display: flex !important;
+        align-items: center !important;
+        position: relative !important;
+        gap: 0 !important;
+    }
+
+    /* Slider Pill - Brown background that moves */
+    .faqs-section .slider-pill {
+        /* Calculate exact 50% width minus padding */
+        width: calc(50% - 5px) !important;
+        height: 56px !important;
+
+        /* Styling */
+        background: #331000 !important;
+        border-radius: 100px !important;
+
+        /* Position */
+        position: absolute !important;
+        top: 5px !important;
+
+        /* Transition - use left property */
+        transition: left 0.3s ease !important;
+        transform: none !important;
+
+        /* Z-index */
+        z-index: 1 !important;
+    }
+
+    /* Left Position - For Buyers */
+    .faqs-section .slider-pill.left {
+        left: 5px !important;
+    }
+
+    /* Right Position - For Sellers */
+    .faqs-section .slider-pill.right {
+        left: calc(50% + 0px) !important;
+        /* This keeps it inside the container */
+    }
+
+    /* Toggle Button Options */
+    .faqs-section .toggle-option {
+        /* Each button takes 50% width */
+        width: 50% !important;
+        height: 56px !important;
+
+        /* Typography */
+        font-family: 'SF Pro', sans-serif !important;
+        font-size: 12px !important;
+        line-height: 100% !important;
+        text-align: center !important;
+
+        /* Display */
+        background: transparent !important;
+        border: none !important;
+        cursor: pointer !important;
+
+        /* Position */
+        position: relative !important;
+        z-index: 2 !important;
+
+        /* Transition */
+        transition: color 0.3s ease !important;
+    }
+
+    /* Active Button - White text on brown pill */
+    .faqs-section .toggle-option.active {
+        font-weight: 510 !important;
+        color: #FFFFFF !important;
+    }
+
+    /* Inactive Button - Dark text */
+    .faqs-section .toggle-option:not(.active) {
+        font-weight: 400 !important;
+        color: #1A1A1A !important;
+    }
+
+    /* ===== FAQ Accordion ===== */
+    .faqs-section .faq-accordion {
+        /* Reduced width for mobile */
+        width: 355px !important;
+        max-width: 100%;
+        max-height: none !important;
+
+        /* Styling */
+        background: #FFF5F0 !important;
+        border-radius: 16px !important;
+
+        /* Shadow - lighter for mobile */
+        box-shadow:
+            0px 0px 1px 0px rgba(0, 0, 0, 0.04),
+            0px 1px 2px 0px rgba(0, 0, 0, 0.04),
+            0px 2px 4px 0px rgba(0, 0, 0, 0.02) !important;
+
+        /* Padding */
+        padding: 0 !important;
+
+        /* Overflow */
+        overflow-y: auto;
+        overflow-x: hidden;
+    }
+
+    /* FAQ Item */
+    .faqs-section .faq-item {
+        width: 100% !important;
+    }
+
+    /* FAQ Question - Reduced font size and padding */
+    .faqs-section .faq-question {
+        width: 100% !important;
+
+        /* Reduced padding for mobile */
+        padding: 16px 16px !important;
+
+        /* Typography - Smaller font */
+        font-family: 'SF Pro', sans-serif !important;
+        font-weight: 500 !important;
+        font-size: 14px !important;
+        line-height: 120% !important;
+        color: #000000 !important;
+        text-align: left !important;
+
+        /* Display */
+        display: flex !important;
+        align-items: center !important;
+        justify-content: space-between !important;
+        gap: 12px !important;
+    }
+
+    /* FAQ Question Text */
+    .faqs-section .faq-question span {
+        flex: 1;
+        font-size: 14px !important;
+    }
+
+    /* FAQ Icon - Smaller arrows */
+    .faqs-section .faq-icon {
+        /* Reduced size */
+        width: 16px !important;
+        height: 16px !important;
+        flex-shrink: 0 !important;
+    }
+
+    /* FAQ Separator */
+    .faqs-section .faq-separator {
+        /* Reduced width */
+        width: calc(100% - 32px) !important;
+        max-width: 323px;
+        height: 1px !important;
+
+        /* Styling */
+        background: #E4E4E7 !important;
+
+        /* Margin */
+        margin: 0 auto !important;
+    }
+
+    /* FAQ Answer */
+    .faqs-section .faq-answer {
+        /* Padding */
+        padding: 0 16px 16px 16px !important;
+    }
+
+    .faqs-section .faq-answer p {
+        /* Typography - Smaller font */
+        font-family: 'SF Pro', sans-serif !important;
+        font-weight: 400 !important;
+        font-size: 12px !important;
+        line-height: 140% !important;
+        color: #666666 !important;
+
+        /* Reset */
+        margin: 0 !important;
+    }
+
+    /* ===== Bottom CTA Button ===== */
+
+    /* Hide desktop CTA button on mobile */
+    .faqs-section .faq-right-content .faq-cta-pill {
+        display: none !important;
+    }
+
+    /* Mobile CTA Button - Show only on mobile */
+    .faqs-section .faq-left-column .faq-cta-pill {
+        /* Exact Figma dimensions */
+        width: 245.18px !important;
+        height: 48.67px !important;
+
+        /* Styling */
+        background: #FFDCCC !important;
+        border-radius: 1708.79px !important;
+        border: 1.71px solid transparent !important;
+
+        /* Padding */
+        padding: 6.84px 17.09px !important;
+
+        /* Display */
+        display: inline-flex !important;
+        align-items: center !important;
+        justify-content: center !important;
+        gap: 8.54px !important;
+
+        /* Center horizontally */
+        margin: 0 auto !important;
+
+        /* Remove link underline */
+        text-decoration: none !important;
+
+        /* Transition */
+        transition: all 0.3s ease !important;
+    }
+
+    .faqs-section .faq-left-column .faq-cta-pill:hover {
+        background: #FFCCB3 !important;
+        transform: translateY(-2px);
+    }
+
+    .faqs-section .faq-left-column .faq-cta-text {
+        /* Exact Figma dimensions */
+        width: 211px !important;
+        height: 35px !important;
+
+        /* Typography */
+        font-family: 'SF Pro', sans-serif !important;
+        font-weight: 400 !important;
+        font-size: 16px !important;
+        line-height: 34.18px !important;
+        letter-spacing: 0% !important;
+        color: #331000 !important;
+
+        /* Display */
+        display: flex !important;
+        align-items: center !important;
+        justify-content: center !important;
+    }
+}
+
+/* Smaller mobile screens - 360px and below */
+@media (max-width: 360px) {
+    .faqs-section .faqs-container {
+        width: calc(100vw - 8px) !important;
+        padding: 16px 8px !important;
+    }
+
+    .faqs-section .faq-content-row,
+    .faqs-section .faq-right-content,
+    .faqs-section .faq-left-column,
+    .faqs-section .toggle-slider,
+    .faqs-section .faq-accordion {
+        width: 100% !important;
+        max-width: 340px;
+    }
+
+    .faqs-section .faq-right-heading {
+        width: 100% !important;
+        font-size: 22px !important;
+    }
+
+    .faqs-section .faq-heading-bold {
+        font-size: 22px !important;
+    }
+}

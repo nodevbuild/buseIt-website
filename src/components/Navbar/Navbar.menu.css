@@ -1,0 +1,153 @@
+/* ============================================
+   Navbar - Mobile Menu Slide-in Animation
+   ============================================ */
+
+/* Hide mobile menu completely on desktop */
+@media (min-width: 769px) {
+
+    .mobile-menu,
+    .mobile-menu-backdrop {
+        display: none !important;
+    }
+}
+
+/* Mobile Menu Overlay & Slide-in */
+@media (max-width: 768px) {
+
+    /* Mobile Menu Container */
+    .mobile-menu {
+        /* Positioning */
+        position: fixed;
+        top: 0;
+        right: -100%;
+
+        /* Dimensions */
+        width: 280px;
+        height: 100vh;
+
+        /* Styling */
+        background: #FFF5F0;
+        box-shadow: -4px 0 20px rgba(0, 0, 0, 0.15);
+
+        /* Layout */
+        display: flex;
+        flex-direction: column;
+        padding: 100px 30px 30px;
+        gap: 0;
+
+        /* Z-index */
+        z-index: 999;
+
+        /* Transition */
+        transition: right 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+    }
+
+    /* Mobile Menu Open State */
+    .mobile-menu.open {
+        right: 0;
+    }
+
+    /* Mobile Menu Backdrop */
+    .mobile-menu-backdrop {
+        /* Positioning */
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+
+        /* Styling */
+        background: rgba(0, 0, 0, 0.5);
+
+        /* Z-index */
+        z-index: 998;
+
+        /* Initially hidden */
+        opacity: 0;
+        pointer-events: none;
+
+        /* Transition */
+        transition: opacity 0.4s ease;
+    }
+
+    /* Backdrop visible when menu is open */
+    .mobile-menu-backdrop.open {
+        opacity: 1;
+        pointer-events: all;
+    }
+
+    /* Mobile Menu Links */
+    .mobile-nav-link {
+        /* Dimensions */
+        width: 100%;
+
+        /* Typography */
+        font-family: 'SF Pro', sans-serif;
+        font-weight: 510;
+        font-size: 18px;
+        color: #3E2B24;
+        text-align: left;
+
+        /* Spacing */
+        padding: 18px 0;
+        margin: 0;
+
+        /* Styling */
+        background: transparent;
+        border: none;
+        border-bottom: 1px solid rgba(62, 43, 36, 0.1);
+
+        /* Cursor */
+        cursor: pointer;
+
+        /* Transition */
+        transition: all 0.2s ease;
+    }
+
+    .mobile-nav-link:hover {
+        color: #FF5202;
+        padding-left: 10px;
+    }
+
+    .mobile-nav-link:active {
+        transform: scale(0.98);
+    }
+
+    /* Mobile Contact Button */
+    .mobile-contact-button {
+        /* Dimensions */
+        width: 100%;
+
+        /* Typography */
+        font-family: 'SF Pro', sans-serif;
+        font-weight: 600;
+        font-size: 18px;
+        color: #FFFFFF;
+        text-align: center;
+
+        /* Spacing */
+        padding: 14px 24px;
+        margin-top: 30px;
+
+        /* Styling */
+        background: #3E2B24;
+        border: none;
+        border-radius: 100px;
+
+        /* Cursor */
+        cursor: pointer;
+
+        /* Transition */
+        transition: all 0.2s ease;
+    }
+
+    .mobile-contact-button:hover {
+        background: #FF5202;
+        transform: translateY(-2px);
+        box-shadow: 0 4px 12px rgba(255, 82, 2, 0.3);
+    }
+
+    .mobile-contact-button:active {
+        transform: translateY(0);
+    }
+}

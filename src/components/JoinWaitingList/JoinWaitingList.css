@@ -1,0 +1,282 @@
+/* ============================================
+   Join Waiting List Page Styles
+   Exact Figma specifications
+   ============================================ */
+
+.join-waitlist-page {
+    /* Full page container */
+    width: 100%;
+    min-height: 100vh;
+
+    /* Background */
+    background: #FFF5F0;
+
+    /* Centering */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    /* Padding */
+    padding: 40px 20px;
+}
+
+.waitlist-card {
+    /* Exact Figma dimensions */
+    width: 1027px;
+    height: 584px;
+
+    /* Styling */
+    background: #FFFFFF;
+    border-radius: 20px;
+    box-shadow: 0px 4px 30px 0px rgba(0, 0, 0, 0.25);
+
+    /* Display */
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+
+    /* No padding - positioning handled by children */
+    padding: 0;
+
+    /* Position for absolute children */
+    position: relative;
+    overflow: visible;
+}
+
+/* Left Content Section */
+.waitlist-left-content {
+    /* Display */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    /* Padding */
+    padding: 65px 0 65px 70px;
+
+    /* Z-index */
+    position: relative;
+    z-index: 2;
+}
+
+/* Text Group Container */
+.waitlist-text-group {
+    /* Exact Figma dimensions */
+    width: 452px;
+    height: 254px;
+
+    /* Display */
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+
+/* Heading */
+.waitlist-heading {
+    /* Exact Figma dimensions */
+    width: 322px;
+    height: 96px;
+
+    /* Typography */
+    font-family: 'Mafle Type DEMO', sans-serif;
+    font-weight: 900;
+    font-size: 48px;
+    line-height: 100%;
+    letter-spacing: 0%;
+    text-transform: uppercase;
+
+    /* Gradient text */
+    background: linear-gradient(135.99deg, #FF5202 9.69%, #D44200 97.72%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+
+    /* Reset */
+    margin: 0;
+}
+
+/* Description */
+.waitlist-description {
+    /* Exact Figma dimensions */
+    width: 452px;
+    height: 72px;
+
+    /* Typography */
+    font-family: 'SF Pro Display', sans-serif;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 120%;
+    letter-spacing: 0%;
+    color: #1A1A1A;
+
+    /* Reset */
+    margin: 0;
+}
+
+/* Avatar Group */
+.waitlist-avatar-group {
+    /* Exact Figma dimensions */
+    width: 166px;
+    height: 36px;
+
+    /* Display */
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.avatar-group-image {
+    /* Full size */
+    width: 100%;
+    height: 100%;
+
+    /* Display */
+    display: block;
+    object-fit: contain;
+}
+
+/* Waitlist Illustration */
+.waitlist-illustration {
+    /* Adjusted dimensions */
+    width: 560px;
+    height: 560px;
+
+    /* Position - bottom of card */
+    position: absolute;
+    bottom: 0;
+    left: 473px;
+
+    /* Display */
+    display: block;
+    object-fit: contain;
+
+    /* Z-index - above content */
+    z-index: 10;
+
+    /* Prevent interaction */
+    pointer-events: none;
+}
+
+/* Waitlist Form */
+.waitlist-form {
+    /* Exact Figma dimensions */
+    width: 452px;
+    height: 117px;
+
+    /* Display */
+    display: flex;
+    flex-direction: column;
+    gap: 13px;
+
+    /* Spacing from avatar group */
+    margin-top: 76px;
+}
+
+/* Form Row */
+.form-row {
+    /* Display */
+    display: flex;
+    flex-direction: row;
+    gap: 15px;
+
+    /* Height */
+    height: 52px;
+}
+
+/* Form Input - Base */
+.form-input {
+    /* Dimensions */
+    height: 52px;
+
+    /* Styling */
+    background: #FFFFFF;
+    border: none;
+    border-radius: 16px;
+
+    /* Box shadow for depth */
+    box-shadow:
+        0px 4px 12px rgba(0, 0, 0, 0.08),
+        0px 2px 4px rgba(0, 0, 0, 0.06);
+
+    /* Padding */
+    padding: 16px 19px;
+
+    /* Typography */
+    font-family: 'SF Pro Display', sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 20px;
+    letter-spacing: 0%;
+    color: #1A1A1A;
+
+    /* Outline */
+    outline: none;
+
+    /* Box sizing */
+    box-sizing: border-box;
+
+    /* Transition */
+    transition: box-shadow 0.2s ease;
+}
+
+.form-input:focus {
+    box-shadow:
+        0px 6px 16px rgba(0, 0, 0, 0.12),
+        0px 3px 6px rgba(0, 0, 0, 0.08);
+}
+
+.form-input::placeholder {
+    color: #666666;
+    text-align: left;
+}
+
+/* Half Width Inputs */
+.form-input-half {
+    width: 218.5px;
+}
+
+/* Email Input */
+.form-input-email {
+    width: 309px;
+}
+
+/* Notify Button */
+.notify-button {
+    /* Dimensions */
+    width: 133px;
+    height: 52px;
+
+    /* Styling */
+    background: #FF5202;
+    border: none;
+    border-radius: 16px;
+
+    /* Padding */
+    padding: 16px 28px;
+
+    /* Typography */
+    font-family: 'SF Pro Display', sans-serif;
+    font-weight: 590;
+    font-size: 16px;
+    line-height: 20px;
+    letter-spacing: 0%;
+    color: #FFFFFF;
+    text-align: center;
+
+    /* Cursor */
+    cursor: pointer;
+
+    /* Transition */
+    transition: background 0.2s ease;
+
+    /* Box sizing */
+    box-sizing: border-box;
+}
+
+.notify-button:hover {
+    background: #D44200;
+}
+
+.notify-button:active {
+    transform: scale(0.98);
+}

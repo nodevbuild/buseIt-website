@@ -1,0 +1,73 @@
+/* ============================================
+   Hero Footer Banner Styles
+   Orange banner at bottom of hero section
+   ============================================ */
+
+.hero-footer-banner {
+    /* Full viewport width within hero section */
+    width: 100vw;
+    height: 50px;
+
+    /* Colors */
+    background: #FF5202;
+
+    /* Layout */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    /* Remove any padding/margin */
+    margin: 0;
+    padding: 7px 0;
+
+    /* Ensure it stays at bottom of hero section */
+    flex-shrink: 0;
+
+    /* Position to break out of container for full width */
+    position: relative;
+    left: 50%;
+    right: 50%;
+    margin-left: -50vw;
+    margin-right: -50vw;
+}
+
+.hero-footer-text {
+    /* Exact Typography from Figma */
+    font-family: 'SF Pro Display', -apple-system, BlinkMacSystemFont, sans-serif;
+    font-weight: 860;
+    font-size: 24px;
+    line-height: 100%;
+    letter-spacing: 0%;
+
+    /* Color */
+    color: #FFFFFF;
+
+    /* Reset margins */
+    margin: 0;
+
+    /* Optional: Subtle animation */
+    animation: fadeIn 0.6s ease-in-out;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .hero-footer-text {
+        font-size: 18px;
+    }
+}
+
+@media (max-width: 480px) {
+    .hero-footer-text {
+        font-size: 16px;
+    }
+}

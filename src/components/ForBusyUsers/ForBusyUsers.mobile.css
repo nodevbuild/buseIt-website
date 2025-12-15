@@ -1,0 +1,341 @@
+/* ============================================
+   For Busy Users Section - Mobile Responsive
+   iPhone 16 Design - Exact Figma Specifications
+   Responsive for all screens
+   ============================================ */
+
+/* Mobile styles - ONLY for screens 768px and below */
+@media (max-width: 768px) {
+
+    /* Section Container */
+    .for-busy-users-section {
+        padding: 60px 20px !important;
+        display: flex;
+        justify-content: center;
+    }
+
+    /* Main Card Container */
+    .for-busy-users-section .for-busy-users-container {
+        width: calc(100vw - 16px) !important;
+        max-width: calc(100vw - 16px);
+        height: auto !important;
+        min-height: 900.99px;
+
+        /* Styling */
+        background: #FFF5F0 !important;
+        border-radius: 16px !important;
+
+        /* Padding */
+        padding: 20px 12px !important;
+
+        /* Layout */
+        display: flex !important;
+        flex-direction: column !important;
+        align-items: center !important;
+        gap: 10px !important;
+    }
+
+    /* Pill Badge */
+    .section-pill-busy {
+        width: 108px !important;
+        height: 22px !important;
+
+        /* Styling */
+        border-radius: 1000px !important;
+        border: 0.5px solid #331000 !important;
+
+        /* Padding */
+        padding: 5px 10px !important;
+
+        /* Layout */
+        display: flex !important;
+        align-items: center !important;
+        justify-content: center !important;
+        gap: 10px;
+    }
+
+    /* Pill Text */
+    .pill-text-busy {
+        width: 88px;
+        height: 12px;
+
+        /* Typography */
+        font-family: 'SF Pro', sans-serif !important;
+        font-weight: 510 !important;
+        font-size: 12px !important;
+        line-height: 100% !important;
+        letter-spacing: 0% !important;
+        text-transform: capitalize !important;
+        color: #331000 !important;
+    }
+
+    /* Content Wrapper - Column layout, illustration first */
+    .for-busy-users-section .content-wrapper-busy {
+        width: 100% !important;
+
+        /* Layout - Illustration on top, text below */
+        display: flex !important;
+        flex-direction: column !important;
+        align-items: center !important;
+        gap: 30px !important;
+
+        /* Reset desktop margin */
+        margin-bottom: 0 !important;
+    }
+
+    /* Illustration Container - Display first, 30px gap from pill */
+    .for-busy-users-section .illustration-container-busy {
+        width: 337.99px !important;
+        max-width: 90vw;
+        height: 337.99px !important;
+
+        /* Styling */
+        border-radius: 10.82px !important;
+
+        /* Display first */
+        order: 1 !important;
+
+        /* Position */
+        position: relative !important;
+        overflow: hidden;
+        flex-shrink: 0;
+    }
+
+    /* Background Illustration */
+    .background-illustration-busy {
+        width: 100% !important;
+        height: 100% !important;
+        object-fit: cover;
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: 1;
+    }
+
+    /* Person Illustration */
+    .person-illustration-busy {
+        width: 100% !important;
+        height: auto !important;
+        max-height: 100%;
+        object-fit: contain;
+        position: absolute;
+        bottom: 0;
+        left: 50%;
+        transform: translateX(-50%);
+        z-index: 2;
+    }
+
+    /* Left Content (Text Container) - Display second */
+    .for-busy-users-section .left-content-busy {
+        width: 360px !important;
+        max-width: 100%;
+        height: auto;
+        min-height: 441px;
+
+        /* Styling */
+        border-radius: 16px;
+
+        /* Display after illustration */
+        order: 2 !important;
+
+        /* Layout */
+        display: flex !important;
+        flex-direction: column !important;
+        gap: 32px !important;
+    }
+
+    /* Header Group - Heading + Subtitle */
+    .header-group-busy {
+        width: 360px !important;
+        max-width: 100%;
+        height: auto;
+
+        /* Layout */
+        display: flex !important;
+        flex-direction: column !important;
+        gap: 12px !important;
+    }
+
+    /* Main Heading */
+    .main-heading-busy {
+        width: 360px !important;
+        max-width: 100%;
+        height: auto;
+
+        /* Typography */
+        font-family: 'SF Pro', sans-serif !important;
+        font-weight: 700 !important;
+        font-size: 24px !important;
+        line-height: 100% !important;
+        letter-spacing: 0% !important;
+        text-transform: capitalize !important;
+        color: #331000 !important;
+
+        /* Reset */
+        margin: 0 !important;
+    }
+
+    /* Subtitle */
+    .subtitle-busy {
+        width: 360px !important;
+        max-width: 100%;
+        height: auto;
+
+        /* Typography */
+        font-family: 'SF Pro', sans-serif !important;
+        font-weight: 400 !important;
+        font-size: 20px !important;
+        line-height: 100% !important;
+        letter-spacing: 0% !important;
+        text-transform: capitalize !important;
+        color: #331000 !important;
+
+        /* Reset */
+        margin: 0 !important;
+    }
+
+    /* Description */
+    .description-busy {
+        width: 360px !important;
+        max-width: 100%;
+        height: auto;
+
+        /* Typography */
+        font-family: 'SF Pro', sans-serif !important;
+        font-weight: 400 !important;
+        font-size: 16px !important;
+        line-height: 100% !important;
+        letter-spacing: 0% !important;
+        color: #1A1A1A !important;
+
+        /* Reset */
+        margin: 0 !important;
+    }
+
+    /* Features List */
+    .features-list-busy {
+        width: 360px !important;
+        max-width: 100%;
+
+        /* Layout */
+        display: flex !important;
+        flex-direction: column !important;
+        gap: 32px !important;
+    }
+
+    /* Feature Item */
+    .feature-item-busy {
+        width: 360px !important;
+        max-width: 100%;
+        height: auto;
+        min-height: 68px;
+
+        /* Layout */
+        display: flex !important;
+        flex-direction: row !important;
+        gap: 21px !important;
+        align-items: flex-start !important;
+    }
+
+    /* Feature Icon */
+    .feature-icon-busy {
+        width: 40px !important;
+        height: 40px !important;
+        flex-shrink: 0;
+    }
+
+    /* Feature Text Container */
+    .feature-text-busy {
+        width: 304px !important;
+        max-width: 100%;
+        height: auto;
+        min-height: 68px;
+
+        /* Layout */
+        display: flex !important;
+        flex-direction: column !important;
+        gap: 16px !important;
+    }
+
+    /* Feature Title */
+    .feature-title-busy {
+        width: auto;
+        max-width: 304px;
+        height: auto;
+
+        /* Typography */
+        font-family: 'SF Pro', sans-serif !important;
+        font-weight: 700 !important;
+        font-size: 20px !important;
+        line-height: 41.01px !important;
+        letter-spacing: 0% !important;
+        color: #331000 !important;
+
+        /* Reset */
+        margin: 0 !important;
+    }
+
+    /* Feature Description */
+    .feature-description-busy {
+        width: 304px !important;
+        max-width: 100%;
+        height: auto;
+
+        /* Typography */
+        font-family: 'SF Pro', sans-serif !important;
+        font-weight: 400 !important;
+        font-size: 16px !important;
+        line-height: 100% !important;
+        letter-spacing: 0% !important;
+        color: #1A1A1A !important;
+
+        /* Reset */
+        margin: 0 !important;
+    }
+
+    /* Hide CTA Button on mobile */
+    .cta-button-busy {
+        display: none !important;
+    }
+}
+
+/* Smaller screens - 360px and below */
+@media (max-width: 360px) {
+    .for-busy-users-container {
+        width: 340px !important;
+        padding: 18px 10px !important;
+    }
+
+    .illustration-container-busy {
+        width: 310px !important;
+        height: 310px !important;
+    }
+
+    .left-content-busy,
+    .header-group-busy,
+    .main-heading-busy,
+    .subtitle-busy,
+    .description-busy,
+    .features-list-busy,
+    .feature-item-busy {
+        width: 320px !important;
+    }
+
+    .feature-text-busy,
+    .feature-description-busy {
+        width: 270px !important;
+    }
+}
+
+/* Medium screens - 361px to 400px */
+@media (min-width: 361px) and (max-width: 400px) {
+    .for-busy-users-container {
+        width: 95% !important;
+    }
+
+    .illustration-container-busy {
+        width: 90% !important;
+        height: auto !important;
+        aspect-ratio: 1 / 1;
+    }
+}

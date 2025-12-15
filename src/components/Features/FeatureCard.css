@@ -1,0 +1,114 @@
+/* ============================================
+   Feature Card Component Styles
+   Exact Figma specifications
+   ============================================ */
+
+/* Feature Card Container */
+.feature-card {
+    /* Exact Figma dimensions */
+    width: 357.24px;
+    height: 344.09px;
+
+    /* Styling */
+    background: #FFFFFF;
+    border-radius: 17.53px;
+
+    /* Padding */
+    padding: 12.05px 9.86px;
+
+    /* Layout */
+    display: flex;
+    flex-direction: column;
+    gap: 10.96px;
+
+    /* Flex */
+    flex-shrink: 0;
+
+    /* Shadow for depth */
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+
+    /* Transition */
+    transition: all 0.3s ease;
+}
+
+.feature-card:hover {
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.12);
+    transform: translateY(-4px);
+}
+
+/* Card Image Container - for layered images */
+.feature-card-image-container {
+    /* Exact Figma dimensions */
+    width: 338.62px;
+    height: 265.19px;
+
+    /* Position for absolute children */
+    position: relative;
+
+    /* Display */
+    display: block;
+
+    /* Flex */
+    flex-shrink: 0;
+}
+
+/* Card Image (Base/Background) */
+.feature-card-image {
+    /* Full container size */
+    width: 100%;
+    height: 100%;
+
+    /* Display */
+    display: block;
+    object-fit: cover;
+    border-radius: 12px;
+
+    /* Z-index */
+    z-index: 1;
+}
+
+/* Overlay Image (for layered cards like Card 4) */
+.feature-card-overlay {
+    /* Exact Figma dimensions */
+    width: 207.87px;
+    height: 232.32px;
+
+    /* Position - centered horizontally, vertically centered */
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    /* Styling */
+    border-radius: 10.35px;
+
+    /* Display */
+    display: block;
+    object-fit: contain;
+
+    /* Z-index - above background */
+    z-index: 2;
+}
+
+/* Card Title */
+.feature-card-title {
+    /* Exact Figma dimensions */
+    width: 338.62px;
+    height: 17px;
+
+    /* Typography */
+    font-family: 'SF Pro Display', sans-serif;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 100%;
+    letter-spacing: 0%;
+    text-align: center;
+    text-transform: capitalize;
+    color: #292929;
+
+    /* Reset */
+    margin: 0;
+
+    /* Flex */
+    flex-shrink: 0;
+}

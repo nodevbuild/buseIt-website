@@ -1,0 +1,252 @@
+/* ============================================
+   Card 1 - Main Card Container Styles
+   Exact Figma hierarchy and specifications
+   ============================================ */
+
+.main-card {
+    /* Exact Figma dimensions */
+    width: 973.3px;
+    height: 446px;
+
+    /* Styling */
+    border-radius: 18.2px;
+    background: #FFFFFF;
+
+    /* Padding */
+    padding: 11.37px 13.65px 22.75px 13.65px;
+
+    /* Layout */
+    display: flex;
+    flex-direction: row;
+    gap: 38px;
+    /* Increased gap between illustration and text */
+
+    /* Shadow */
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.08);
+
+    /* Transition */
+    transition: all 0.3s ease;
+}
+
+.main-card:hover {
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.12);
+}
+
+/* ===== Illustration Container =====  */
+.illustration-container {
+    /* UPDATED: Same as Card2 for consistency */
+    width: 403.33px;
+    height: 425.17px;
+
+    /* Styling */
+    border-radius: 13.97px;
+    /* Matched to Card2 */
+    background: #FFF5F0;
+
+    /* Layout - absolute positioning for children */
+    position: relative;
+
+    /* Prevent shrinking */
+    flex-shrink: 0;
+
+    /* Overflow for tilted cards */
+    overflow: visible;
+}
+
+/* Illustration Image - LAYER 2 (above price card, below other cards) */
+.illustration-image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 13.97px;
+    /* Matched to container */
+    z-index: 2;
+}
+
+/* Position components absolutely on the illustration */
+
+/* Stars Badge - LAYER 3 (in front of person) */
+.illustration-container .stars-badge {
+    position: absolute;
+    bottom: 46px;
+    /* Adjusted for larger container */
+    left: 73px;
+    /* Adjusted for wider container */
+    z-index: 3;
+    transform: rotate(6deg);
+}
+
+/* Product Card - LAYER 3 (in front of person) */
+.illustration-container .product-card-wrapper {
+    position: absolute;
+    bottom: 56px;
+    /* Adjusted for taller container */
+    right: 27px;
+    /* Adjusted for wider container */
+    z-index: 3;
+}
+
+/* Price Range Card - LAYER 1 (behind person) */
+.illustration-container .price-range-card {
+    position: absolute;
+    top: 42px;
+    /* Adjusted for taller container */
+    left: 17px;
+    /* Adjusted for wider container */
+    z-index: 1;
+}
+
+/* Chart Group - internal to price card, tilted */
+.chart-group {
+    /* Exact Figma dimensions */
+    width: 137.61px;
+    height: 93.89px;
+
+    /* Rotation - tilted RIGHT */
+    transform: rotate(7.35deg);
+
+    /* Display */
+    display: block;
+    margin-top: 0px;
+    /* moved up 8px from previous 8px */
+}
+
+/* ===== Card Content Section ===== */
+
+.card-content {
+    /* Dimensions from Figma */
+    width: 517.09px;
+
+    /* Layout */
+    display: flex;
+    flex-direction: column;
+    gap: 18.2px;
+
+    /* Vertical centering */
+    justify-content: center;
+    align-items: flex-start;
+
+    /* Flex */
+    flex: 1;
+}
+
+/* Badge Container */
+.badge-container {
+    /* Badge dimensions */
+    width: 54.6px;
+    height: 54.6px;
+
+    /* Orange background */
+    background: #FF5202;
+    border-radius: 27.3px;
+
+    /* Display */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    /* Flex shrink */
+    flex-shrink: 0;
+}
+
+/* Badge Number Text */
+.badge-number {
+    /* Typography - exact Figma specs */
+    font-family: 'Mafle Type DEMO', 'Impact', sans-serif;
+    font-weight: 900;
+    font-size: 34.88px;
+    line-height: 100%;
+    color: #FFFFFF;
+
+    /* Center text */
+    text-align: center;
+
+    /* Ensure visibility */
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+/* Step Badge Image */
+.step-badge {
+    width: 100%;
+    height: 100%;
+    display: block;
+    object-fit: contain;
+}
+
+/* Text Content Group */
+.text-content {
+    /* Dimensions */
+    width: 517.09px;
+    height: 127.16px;
+
+    /* Layout */
+    display: flex;
+    flex-direction: column;
+    gap: 26.16px;
+}
+
+/* Card Heading */
+.card-heading {
+    /* Dimensions */
+    width: 256px;
+    height: 55px;
+
+    /* Typography */
+    font-family: 'Mafle Type DEMO', 'Impact', sans-serif;
+    font-weight: 900;
+    font-size: 32px;
+    line-height: 100%;
+    text-transform: capitalize;
+    color: #292929;
+
+    /* Reset */
+    margin: 0;
+}
+
+/* Card Description */
+.card-description {
+    /* Dimensions - 16px gap from right edge */
+    width: 501px;
+    height: 46px;
+
+    /* Typography */
+    font-family: 'SF Pro Display', sans-serif;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 120%;
+    color: #292929;
+
+    /* Reset */
+    margin: 0;
+}
+
+/* ===== Responsive Design ===== */
+@media (max-width: 1024px) {
+    .main-card {
+        width: 100%;
+        max-width: 973.3px;
+        flex-direction: column;
+        height: auto;
+    }
+
+    .illustration-container {
+        width: 100%;
+        height: 400px;
+    }
+}
+
+@media (max-width: 768px) {
+    .main-card {
+        border-radius: 12px;
+        padding: 16px;
+    }
+
+    .illustration-container {
+        height: 350px;
+        border-radius: 12px;
+    }
+}

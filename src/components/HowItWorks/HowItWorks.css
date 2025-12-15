@@ -1,0 +1,223 @@
+/* ============================================
+   How It Works Section Styles
+   Pixel-perfect layout matching Figma specs
+   ============================================ */
+
+.how-it-works-section {
+    width: 100%;
+    min-height: 100vh;
+    background: #FFFFFF;
+    padding: 127px 0 100px 0;
+    /* 127px top spacing from banner */
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.how-it-works-container {
+    max-width: 1512px;
+    width: 100%;
+    padding: 0 60px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 47px;
+    /* Gap between all children: header, cards, and arrows */
+}
+
+/* ===== Header Section ===== */
+.how-it-works-header {
+    /* Exact Figma dimensions */
+    width: 1211px;
+    max-width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+    /* Gap between pill and text group */
+}
+
+/* Pill Badge */
+.section-pill {
+    /* Exact Figma dimensions */
+    width: 122px;
+    height: 30px;
+
+    /* Styling */
+    border-radius: 1000px;
+    border: 0.5px solid #331000;
+    padding: 5px 10px;
+
+    /* Layout */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    /* Animation */
+    transition: all 0.3s ease;
+}
+
+.section-pill:hover {
+    background: rgba(51, 16, 0, 0.05);
+    transform: translateY(-2px);
+}
+
+.pill-text {
+    /* Exact Typography from Figma */
+    font-family: 'SF Pro Display', -apple-system, BlinkMacSystemFont, sans-serif;
+    font-weight: 510;
+    font-size: 16px;
+    line-height: 100%;
+    letter-spacing: 0%;
+    text-transform: capitalize;
+    color: #331000;
+
+    /* Dimensions */
+    width: 102px;
+    height: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Header Text Group (Heading + Description) - EXACT FIGMA */
+.text-group,
+.header-text-group {
+    /* Exact Figma dimensions */
+    width: 1211px;
+    max-width: 100%;
+    height: auto;
+
+    /* Layout */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 16px;
+}
+
+/* Main Heading */
+.section-heading {
+    /* Exact Figma dimensions */
+    width: 1211px;
+    max-width: 100%;
+    height: 32px;
+
+    /* Typography */
+    font-family: 'SF Pro Display', -apple-system, BlinkMacSystemFont, sans-serif;
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 100%;
+    letter-spacing: 0%;
+    text-align: center;
+    text-transform: capitalize;
+    color: #331000;
+
+    /* Reset margins */
+    margin: 0;
+
+    /* Animation */
+    animation: fadeInUp 0.6s ease-out;
+}
+
+/* Subtitle - Centered and Adaptive */
+.section-subtitle,
+.section-description {
+    /* Adaptive dimensions */
+    width: 100%;
+    max-width: 709px;
+
+    /* Typography - EXACT FIGMA */
+    font-family: 'SF Pro', -apple-system, BlinkMacSystemFont, sans-serif;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 100%;
+    letter-spacing: 0%;
+    text-align: center;
+    color: #1A1A1A;
+
+    /* Centered with auto margins */
+    margin: 0 auto;
+
+    /* Animation */
+    animation: fadeInUp 0.6s ease-out 0.1s backwards;
+}
+
+/* Animations */
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Cards Container - Desktop shows one at a time */
+.cards-container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.cards-wrapper {
+    position: relative;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+/* On desktop, hide cards 2 and 3 by default - will be shown by arrows */
+.cards-wrapper>div:nth-child(2),
+.cards-wrapper>div:nth-child(3) {
+    display: none;
+}
+
+/* Card Showcase */
+.card-showcase {
+    width: 100%;
+    min-height: 300px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* ===== Responsive Design ===== */
+@media (max-width: 1400px) {
+
+    .how-it-works-header,
+    .header-text-group,
+    .section-heading {
+        width: 100%;
+    }
+
+    .section-subtitle {
+        width: 90%;
+    }
+}
+
+@media (max-width: 768px) {
+    .how-it-works-section {
+        padding: 80px 0 60px 0;
+    }
+
+    .how-it-works-container {
+        padding: 0 20px;
+    }
+
+    .section-heading {
+        font-size: 28px;
+        height: auto;
+    }
+
+    .section-subtitle {
+        font-size: 18px;
+        line-height: 120%;
+    }
+
+    .pill-text {
+        font-size: 14px;
+    }
+}

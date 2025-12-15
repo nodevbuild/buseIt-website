@@ -1,0 +1,225 @@
+/* ============================================
+   Hero Section - Mobile Responsive Styles
+   Exact Figma Specifications for Mobile Only
+   ============================================ */
+
+/* Hide mobile elements on desktop */
+@media (min-width: 769px) {
+
+    .hero-content-wrapper,
+    .hero-illustration,
+    .download-app-button {
+        display: none !important;
+    }
+}
+
+/* Mobile styles - ONLY for screens 768px and below */
+@media (max-width: 768px) {
+
+    /* Hide desktop layout */
+    .hero-animation,
+    .hero-content,
+    .hero-headline,
+    .hero-description,
+    .app-badges,
+    .badge-link,
+    .app-badge {
+        display: none !important;
+    }
+
+    /* Hero Section Container */
+    .hero-section {
+        width: 100%;
+        min-height: auto;
+        height: auto;
+        padding: 0;
+        padding-top: 150px;
+        /* Space for navbar */
+        padding-bottom: 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: flex-start;
+        gap: 0;
+    }
+
+    .hero-container {
+        width: 100%;
+        max-width: 393px;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: flex-start;
+        gap: 10px;
+        padding: 0 10px;
+    }
+
+    /* Text and Content Wrapper - Exact Figma dimensions */
+    .hero-content-wrapper {
+        width: 345px;
+        height: 221px;
+        max-width: 100%;
+        display: flex !important;
+        flex-direction: column;
+        align-items: center;
+        gap: 22px;
+    }
+
+    /* Main Heading - "BUY BETTER SELL SMARTER" */
+    .hero-heading {
+        width: 235px;
+        height: auto;
+
+        /* Typography */
+        font-family: 'Mafle Type DEMO', sans-serif;
+        font-weight: 900;
+        font-size: 32px;
+        line-height: 100%;
+        letter-spacing: 0%;
+        text-align: center;
+        text-transform: uppercase;
+
+        /* Color */
+        color: #FF5202;
+
+        /* Reset margins */
+        margin: 0;
+    }
+
+    /* Description Text */
+    .hero-subtitle {
+        width: 345px;
+        max-width: 100%;
+        height: auto;
+
+        /* Typography */
+        font-family: 'SF Pro', sans-serif;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 100%;
+        letter-spacing: 0%;
+        text-align: center;
+
+        /* Color */
+        color: #4D4D4D;
+
+        /* Reset margins */
+        margin: 0;
+    }
+
+    /* Download Button */
+    .download-app-button {
+        /* Exact dimensions */
+        width: 273.69px;
+        height: 56px;
+
+        /* Styling */
+        background: #1A1A1A;
+        border-radius: 1708.79px;
+        border: none;
+
+        /* Padding */
+        padding: 17.09px 27.34px;
+
+        /* Layout */
+        display: flex !important;
+        align-items: center;
+        justify-content: center;
+        gap: 13.67px;
+
+        /* Typography */
+        font-family: 'SF Pro', sans-serif;
+        font-weight: 510;
+        font-size: 20px;
+        line-height: 41.01px;
+        letter-spacing: 0%;
+        color: #F2F2F2;
+
+        /* Cursor */
+        cursor: pointer;
+
+        /* Transition */
+        transition: all 0.3s ease;
+    }
+
+    .download-app-button:hover {
+        background: #2A2A2A;
+        transform: scale(1.02);
+    }
+
+    .download-app-button:active {
+        transform: scale(0.98);
+    }
+
+    /* Arrow Icon in Button */
+    .download-arrow-icon {
+        width: 24px;
+        height: 24px;
+        object-fit: contain;
+    }
+
+    /* GIF/Illustration */
+    .hero-illustration {
+        width: 373.19px;
+        max-width: 100%;
+        height: 393px;
+        object-fit: contain;
+        margin-top: 10px;
+        display: block !important;
+    }
+
+    /* Hero Footer Banner - Centered with Full Width */
+    .hero-footer-banner {
+        /* Full width */
+        width: 100%;
+        max-width: 100%;
+        height: 42px;
+
+        /* Remove any positioning */
+        margin: 20px 0 0 0;
+        position: static;
+
+        /* Styling */
+        background: #FF5202;
+        border-radius: 0;
+
+        /* Padding */
+        padding: 7px 20px;
+
+        /* Layout */
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .hero-footer-text {
+        /* Typography */
+        font-family: 'SF Pro', sans-serif;
+        font-weight: 510;
+        font-size: 14px;
+        text-align: center;
+        color: #FFFFFF;
+
+        /* Reset */
+        margin: 0;
+    }
+}
+
+/* Very small screens */
+@media (max-width: 360px) {
+    .hero-heading {
+        font-size: 28px;
+        width: 200px;
+    }
+
+    .hero-subtitle {
+        font-size: 14px;
+        width: 320px;
+    }
+
+    .download-app-button {
+        width: 250px;
+        font-size: 18px;
+    }
+}

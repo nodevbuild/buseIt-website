@@ -1,0 +1,235 @@
+/* ============================================
+   Card3 - Mobile Responsive Styles
+   Same layout as Card2
+   ============================================ */
+
+/* Mobile styles - ONLY for screens 768px and below */
+@media (max-width: 768px) {
+
+    /* Main Card Container - Card3 - Match Card2 size */
+    .card3-main-card {
+        /* Same dimensions as Card2 */
+        width: 340px !important;
+        max-width: 90vw;
+        height: auto !important;
+        min-height: 580px !important;
+
+        /* Layout - Change to column for mobile */
+        flex-direction: column !important;
+
+        /* Styling - Solid white */
+        background: #ffffff !important;
+        border-radius: 13.21px !important;
+
+        /* Padding */
+        padding: 8.26px 9.91px 16.52px 9.91px !important;
+
+        /* Gap from illustration to text content */
+        gap: 20.65px !important;
+
+        /* Subtle border for visibility */
+        border: 1.5px solid rgba(0, 0, 0, 0.08) !important;
+
+        /* Remove desktop shadow */
+        box-shadow: none !important;
+    }
+
+    /* Illustration Container - Increased height */
+    .card3-main-card .illustration-container-card3 {
+        /* Match Card1 and Card2 dimensions */
+        width: 310px !important;
+        max-width: 100%;
+        height: 410px !important;
+
+        /* Styling */
+        border-radius: 9.91px !important;
+        background: #FFF5F0;
+
+        /* Position */
+        position: relative;
+
+        /* Allow overflow for cards */
+        overflow: visible !important;
+
+        /* No flex-shrink */
+        flex-shrink: 0;
+    }
+
+    /* Background illustration - bottom-right position */
+    .card3-main-card .illustration-container-card3 .card3-background-illustration {
+        display: block !important;
+        width: 280px !important;
+        height: auto !important;
+        max-height: 300px !important;
+        border-radius: 0 !important;
+        object-fit: contain;
+        position: absolute !important;
+        top: auto !important;
+        left: auto !important;
+        transform: none !important;
+        bottom: 0 !important;
+        right: 0 !important;
+        z-index: 2;
+    }
+
+    /* Track Your Order Card - Move left and behind illustration */
+    .card3-main-card .track-order-card {
+        transform: translateX(-30px) !important;
+        z-index: 0 !important;
+    }
+
+    /* Secure Payment Card - Move right and behind illustration */
+    .card3-main-card .secure-payment-card {
+        transform: translateX(48px) !important;
+        z-index: 0 !important;
+    }
+
+
+    /* Card Content Section */
+    .card3-main-card .card3-card-content {
+        /* Exact dimensions */
+        width: 284.1px !important;
+        max-width: 100%;
+        height: auto;
+
+        /* Layout */
+        display: flex !important;
+        flex-direction: row !important;
+        gap: 13.21px !important;
+        align-items: flex-start;
+    }
+
+    /* Badge Container - Orange Number */
+    .card3-main-card .card3-badge-container {
+        /* Exact dimensions */
+        width: 39.64px !important;
+        height: 39.64px !important;
+        flex-shrink: 0;
+
+        /* Remove any default styling */
+        padding: 0 !important;
+        margin: 0;
+    }
+
+    /* Badge Number Text */
+    .card3-main-card .card3-badge-number {
+        /* Typography - EXACT FIGMA */
+        font-family: 'Mafle Type DEMO', sans-serif !important;
+        font-weight: 900 !important;
+        font-style: normal !important;
+        font-size: 19.82px !important;
+        line-height: 100% !important;
+        letter-spacing: 0% !important;
+        text-transform: capitalize !important;
+        color: #FFFFFF !important;
+
+        /* Display */
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    /* Text Content Wrapper */
+    .card3-main-card .card3-text-content {
+        /* Exact dimensions */
+        width: 231.24px !important;
+        max-width: 100%;
+        height: auto;
+
+        /* Layout */
+        display: flex !important;
+        flex-direction: column !important;
+        gap: 18.99px !important;
+    }
+
+    /* Card Heading */
+    .card3-main-card .card3-card-heading {
+        /* Increased width for proper line breaks - Match Card2 */
+        width: 231.24px !important;
+        max-width: 100%;
+        height: auto;
+
+        /* Typography - EXACT FIGMA */
+        font-family: 'Mafle Type DEMO', sans-serif !important;
+        font-weight: 900 !important;
+        font-size: 20px !important;
+        line-height: 100% !important;
+        letter-spacing: 0% !important;
+        text-transform: capitalize !important;
+        color: #292929 !important;
+
+        /* Reset */
+        margin: 0 !important;
+        padding: 0 !important;
+
+        /* Prevent overflow */
+        word-wrap: break-word;
+        overflow-wrap: break-word;
+    }
+
+    /* Orange text in heading */
+    .card3-main-card .orange-text {
+        color: #FF5202;
+    }
+
+    /* Card Description */
+    .card3-main-card .card3-card-description {
+        /* Exact dimensions */
+        width: 231.24px !important;
+        max-width: 100%;
+        height: auto;
+
+        /* Typography - EXACT FIGMA */
+        font-family: 'SF Pro', sans-serif !important;
+        font-weight: 400 !important;
+        font-size: 14px !important;
+        line-height: 120% !important;
+        letter-spacing: 0% !important;
+        color: #292929 !important;
+
+        /* Reset */
+        margin: 0 !important;
+        padding: 0 !important;
+
+        /* Prevent overflow */
+        word-wrap: break-word;
+        overflow-wrap: break-word;
+    }
+}
+
+/* Smaller mobile screens - adaptive scaling */
+@media (max-width: 360px) {
+    .card3-main-card {
+        width: 280px !important;
+        min-height: 480px;
+    }
+
+    .card3-main-card .illustration-container-card3 {
+        width: 260px !important;
+        height: 350px !important;
+    }
+
+    .card3-main-card .card3-card-content {
+        width: 260px !important;
+    }
+
+    .card3-main-card .card3-text-content {
+        width: 210px !important;
+    }
+
+    .card3-main-card .card3-card-description {
+        width: 210px !important;
+    }
+}
+
+/* Tablet screens - slight scaling */
+@media (min-width: 600px) and (max-width: 768px) {
+    .card3-main-card {
+        width: 340px !important;
+    }
+
+    .card3-main-card .illustration-container-card3 {
+        width: 320px !important;
+        height: 420px !important;
+    }
+}

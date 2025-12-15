@@ -1,0 +1,33 @@
+/* ============================================
+   App Global Styles
+   ============================================ */
+
+.app {
+  width: 100%;
+  min-height: 100vh;
+  background: #FFFFFF;
+  position: relative;
+}
+
+.main-content {
+  width: 100%;
+  padding-top: 0;
+}
+
+/* Smooth scrolling for entire app */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Remove default margins and paddings */
+body,
+html {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+}
+
+/* Ensure all sections are properly spaced */
+section {
+  width: 100%;
+}
