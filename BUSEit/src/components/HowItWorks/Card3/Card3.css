@@ -1,0 +1,229 @@
+/* ============================================
+   Card 3 - Main Card Container Styles
+   Exact Figma hierarchy and specifications
+   Card3-specific class names to avoid conflicts
+   ============================================ */
+
+.card3-main-card {
+    /* Exact dimensions - SAME AS CARD1 AND CARD2 */
+    width: 973.3px;
+    height: 446px;
+
+    /* Styling */
+    border-radius: 18.2px;
+    background: #FFFFFF;
+
+    /* Padding */
+    padding: 11.37px 13.65px 22.75px 13.65px;
+
+    /* Layout */
+    display: flex;
+    flex-direction: row;
+    gap: 38px;
+    /* Same gap as Card1 and Card2 */
+
+    /* Shadow - SAME AS CARD1 AND CARD2 */
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.08);
+
+    /* Transition */
+    transition: all 0.3s ease;
+}
+
+.card3-main-card:hover {
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.12);
+}
+
+/* ===== Illustration Container ===== */
+.illustration-container-card3 {
+    /* UPDATED: Same as Card2 for consistency */
+    width: 403.33px;
+    height: 425.17px;
+
+    /* Styling */
+    border-radius: 13.97px;
+    background: #FFF5F0;
+
+    /* Layout - absolute positioning for children */
+    position: relative;
+
+    /* Prevent shrinking */
+    flex-shrink: 0;
+
+    /* Overflow for tilted cards */
+    overflow: visible;
+}
+
+/* Background Illustration - AT BOTTOM RIGHT - ABOVE CARDS */
+.card3-background-illustration {
+    /* Dimensions */
+    width: 356px;
+    height: 300px;
+
+    /* Position - bottom right corner */
+    position: absolute;
+    bottom: 0;
+    right: 0;
+
+    /* Display */
+    display: block;
+    z-index: 2;
+    /* Above both cards */
+}
+
+/* Track Your Order Card - Top Left, Pre-tilted PNG - BEHIND ILLUSTRATION */
+.track-order-card {
+    /* Increased dimensions: +6px width and height */
+    width: 188.56px;
+    /* was 173.56px */
+    height: 188.1px;
+    /* was 173.1px */
+
+    /* Position - adjusted: 48px down, 12px right */
+    position: absolute;
+    top: 96px;
+    /* was 22px, moved down 48px */
+    left: 26px;
+    /* was 18px, moved right 12px */
+
+    /* Already tilted in PNG (9.8deg) */
+
+    /* Display */
+    display: block;
+    z-index: 1;
+    /* Behind illustration */
+
+    /* Shadow (additional to PNG) */
+    filter: drop-shadow(0px 4.45px 11.12px rgba(0, 0, 0, 0.25));
+}
+
+/* Secure Payment Card - Top Right, Pre-tilted PNG - BEHIND ILLUSTRATION */
+.secure-payment-card {
+    /* Increased dimensions: +6px width and height */
+    width: 166.22px;
+    /* was 150.22px */
+    height: 169.08px;
+    /* was 153.08px */
+
+    /* Position - adjusted: 24px left */
+    position: absolute;
+    top: 34px;
+    right: 36px;
+    /* was 23px, moved left 24px */
+
+    /* Already tilted in PNG (-9deg) */
+
+    /* Display */
+    display: block;
+    z-index: 1;
+    /* Behind illustration */
+
+    /* Shadow (additional to PNG) */
+    filter: drop-shadow(0px 5.13px 12.82px rgba(0, 0, 0, 0.25));
+}
+
+/* ===== Card Content Section ===== */
+
+.card3-card-content {
+    /* Dimensions from Figma */
+    width: 517.09px;
+
+    /* Layout */
+    display: flex;
+    flex-direction: column;
+    gap: 18.2px;
+
+    /* Vertical centering */
+    justify-content: center;
+    align-items: flex-start;
+
+    /* Flex */
+    flex: 1;
+}
+
+/* Badge Container */
+.card3-badge-container {
+    /* Badge dimensions */
+    width: 54.6px;
+    height: 54.6px;
+
+    /* Orange background */
+    background: #FF5202;
+    border-radius: 27.3px;
+
+    /* Display */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    /* Flex shrink */
+    flex-shrink: 0;
+}
+
+/* Badge Number Text */
+.card3-badge-number {
+    /* Typography - exact Figma specs */
+    font-family: 'Mafle Type DEMO', 'Impact', sans-serif;
+    font-weight: 900;
+    font-size: 34.88px;
+    line-height: 100%;
+    color: #FFFFFF;
+
+    /* Center text */
+    text-align: center;
+
+    /* Ensure visibility */
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+/* Text Content Group */
+.card3-text-content {
+    /* Dimensions */
+    width: 517.09px;
+    height: 127.16px;
+
+    /* Layout */
+    display: flex;
+    flex-direction: column;
+    gap: 26.16px;
+}
+
+/* Card Heading */
+.card3-card-heading {
+    /* Dimensions */
+    width: 500px;
+    height: auto;
+
+    /* Typography */
+    font-family: 'Mafle Type DEMO', 'Impact', sans-serif;
+    font-weight: 900;
+    font-size: 32px;
+    line-height: 100%;
+    text-transform: capitalize;
+    color: #292929;
+
+    /* Reset */
+    margin: 0;
+}
+
+/* Orange text highlight in heading */
+.orange-text {
+    color: #FF5202;
+}
+
+/* Card Description */
+.card3-card-description {
+    /* Dimensions - 16px gap from right edge */
+    width: 501px;
+    height: 46px;
+
+    /* Typography */
+    font-family: 'SF Pro Display', sans-serif;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 120%;
+    color: #292929;
+
+    /* Reset */
+    margin: 0;
+}

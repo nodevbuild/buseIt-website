@@ -1,0 +1,190 @@
+/* ============================================
+   Navbar - Mobile Responsive Styles
+   Exact Figma Specifications for Mobile Only
+   ============================================ */
+
+/* Mobile styles - ONLY for screens 768px and below */
+@media (max-width: 768px) {
+
+    /* Mobile Navbar Container - Centered and Adaptive */
+    .navbar {
+        /* Responsive dimensions */
+        width: calc(100% - 32px);
+        max-width: 361px;
+        height: 72px;
+
+        /* Centered positioning - 62px from top (after status bar space) */
+        position: fixed;
+        top: px;
+        left: 50%;
+        transform: translateX(-50%);
+
+        /* Styling */
+        background: #FFF5F0;
+        border-radius: 1000px;
+        padding: 17px;
+
+        /* Glass effect */
+        backdrop-filter: blur(20px);
+        -webkit-backdrop-filter: blur(20px);
+        box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.08);
+
+        /* Layout */
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 10px;
+
+        /* Z-index to stay on top */
+        z-index: 1000;
+    }
+
+    .navbar-container {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 10px;
+        padding: 0;
+        height: auto;
+        min-width: auto;
+        max-width: none;
+        background: transparent;
+        backdrop-filter: none;
+        border-radius: 0;
+    }
+
+    /* BUSEit Logo - Mobile size */
+    .logo-image {
+        width: 108px;
+        height: 24px;
+        object-fit: contain;
+    }
+
+    /* Hide desktop navigation links */
+    .navbar-links {
+        display: none;
+    }
+
+    /* Hide desktop contact button */
+    .contact-button {
+        display: none;
+    }
+
+    /* Hamburger Menu Button */
+    .hamburger-menu {
+        /* Exact dimensions */
+        width: 37px;
+        height: 37px;
+
+        /* Positioning */
+        position: relative;
+
+        /* Styling */
+        background: transparent;
+        border: none;
+        cursor: pointer;
+        padding: 0;
+
+        /* Display */
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-shrink: 0;
+    }
+
+    /* Hamburger Line 1 (Top) - All lines same size */
+    .hamburger-menu::before {
+        content: '';
+        position: absolute;
+
+        /* Dimensions - 2px height for visible line */
+        width: 27.75px;
+        height: 2px;
+
+        /* Exact positioning */
+        top: 10.79px;
+        left: 4.63px;
+
+        /* Styling */
+        background: #FF5202;
+        opacity: 1;
+        border-radius: 2px;
+
+        /* Transition for animation */
+        transition: all 0.3s ease;
+    }
+
+    /* Hamburger Line 2 (Middle) - SAME SIZE AS OTHERS */
+    .hamburger-line {
+        position: absolute;
+
+        /* Dimensions - 2px height for visible line */
+        width: 27.75px;
+        height: 2px;
+
+        /* Exact positioning (18.5px from top, 7.71px gap from line 1) */
+        top: 18.5px;
+        left: 4.63px;
+
+        /* Styling */
+        background: #FF5202;
+        opacity: 0.34;
+        border-radius: 2px;
+
+        /* Display */
+        display: block;
+
+        /* Transition */
+        transition: all 0.3s ease;
+    }
+
+    /* Hamburger Line 3 (Bottom) - All lines same size */
+    .hamburger-menu::after {
+        content: '';
+        position: absolute;
+
+        /* Dimensions - 2px height for visible line */
+        width: 27.75px;
+        height: 2px;
+
+        /* Exact positioning (26.21px from top, 7.71px gap from line 2) */
+        top: 26.21px;
+        left: 4.63px;
+
+        /* Styling */
+        background: #FF5202;
+        opacity: 1;
+        border-radius: 2px;
+
+        /* Transition */
+        transition: all 0.3s ease;
+    }
+
+    /* Hamburger menu active state (when menu is open) */
+    .hamburger-menu.active::before {
+        transform: translateY(7.71px) rotate(45deg);
+    }
+
+    .hamburger-menu.active .hamburger-line {
+        opacity: 0;
+    }
+
+    .hamburger-menu.active::after {
+        transform: translateY(-7.71px) rotate(-45deg);
+    }
+}
+
+/* Smaller mobile screens */
+@media (max-width: 393px) {
+    .navbar {
+        width: calc(100% - 32px);
+        max-width: 361px;
+    }
+}
+
+@media (max-width: 360px) {
+    .navbar {
+        width: calc(100% - 24px);
+    }
+}

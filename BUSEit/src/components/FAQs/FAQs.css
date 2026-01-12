@@ -1,0 +1,494 @@
+/* ============================================
+   FAQs Section Styles
+   Exact Figma specifications
+   ============================================ */
+
+.faqs-section {
+    /* Full width */
+    width: 100%;
+
+    /* Spacing from Features section: 127px */
+    margin-top: 127px;
+
+    /* Background */
+    background: #FFFFFF;
+
+    /* Padding - no bottom padding */
+    padding: 0;
+
+    /* Display */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.faqs-container {
+    /* Exact Figma dimensions */
+    width: 1472px;
+    height: 849px;
+
+    /* Styling */
+    background: #FFF5F0;
+    border-radius: 16px;
+
+    /* Padding */
+    padding: 76px 93px;
+
+    /* Display - column for pill then content row */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* ===== Pill Badge ===== */
+.section-pill-faqs {
+    /* Exact Figma dimensions */
+    width: 229px;
+    height: 26px;
+
+    /* Styling */
+    border: 0.5px solid #331000;
+    border-radius: 1000px;
+    background: transparent;
+
+    /* Padding */
+    padding: 5px 10px;
+
+    /* Display */
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+
+    /* Margin bottom */
+    margin-bottom: 58px;
+}
+
+/* Content Row - Left and Right Columns */
+.faq-content-row {
+    /* Full width of container minus padding */
+    width: 100%;
+
+    /* Display */
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    gap: 48px;
+}
+
+/* Left Column - Toggle + Accordion */
+.faq-left-column {
+    /* Width */
+    width: 712px;
+
+    /* Display */
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+
+    /* Flex shrink */
+    flex-shrink: 0;
+}
+
+/* Hide mobile CTA button on desktop */
+.faq-left-column .faq-cta-pill {
+    display: none;
+}
+
+.pill-text-faqs {
+    /* Exact Figma typography */
+    font-family: 'SF Pro Display', sans-serif;
+    font-weight: 510;
+    font-size: 16px;
+    line-height: 100%;
+    letter-spacing: 0%;
+    text-transform: capitalize;
+    color: #331000;
+
+    /* Dimensions */
+    width: 209px;
+    height: 16px;
+
+    /* Display */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* ===== Toggle Slider ===== */
+.toggle-slider {
+    /* Exact Figma dimensions */
+    width: 400px;
+    height: 66px;
+
+    /* Styling */
+    background: rgba(255, 255, 255, 0.3);
+    border: 1px solid #CCCCCC;
+    border-radius: 100px;
+    backdrop-filter: blur(40.8px);
+
+    /* Padding */
+    padding: 5px;
+
+    /* Display */
+    display: flex;
+    align-items: center;
+    position: relative;
+
+    /* Gap */
+    gap: 10px;
+}
+
+/* Sliding Pill Background */
+.slider-pill {
+    /* Exact Figma dimensions */
+    width: 190px;
+    height: 56px;
+
+    /* Styling */
+    background: #331000;
+    border-radius: 100px;
+    backdrop-filter: blur(40.8px);
+
+    /* Position */
+    position: absolute;
+    left: 5px;
+    top: 5px;
+
+    /* Transition */
+    transition: transform 0.3s ease;
+
+    /* Z-index */
+    z-index: 1;
+}
+
+.slider-pill.right {
+    transform: translateX(195px);
+}
+
+/* Toggle Options */
+.toggle-option {
+    /* Dimensions */
+    width: 190px;
+    height: 56px;
+
+    /* Typography */
+    font-family: 'SF Pro Display', sans-serif;
+    font-weight: 510;
+    font-size: 20px;
+    line-height: 22px;
+    text-align: center;
+
+    /* Color - changes based on active state */
+    color: #331000;
+
+    /* Display */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    /* Reset */
+    background: transparent;
+    border: none;
+    cursor: pointer;
+
+    /* Position */
+    position: relative;
+    z-index: 2;
+
+    /* Transition */
+    transition: color 0.3s ease;
+}
+
+.toggle-option.active {
+    color: #FFFFFF;
+}
+
+/* ===== FAQ Accordion ===== */
+.faq-accordion {
+    /* Exact Figma dimensions */
+    width: 712px;
+    max-height: 420px;
+
+    /* Single card styling */
+    background: #FFF5F0;
+    border-radius: 24px;
+
+    /* Shadow */
+    box-shadow:
+        0px 0px 1px 0px rgba(0, 0, 0, 0.06),
+        0px 1px 2px 0px rgba(0, 0, 0, 0.06),
+        0px 2px 4px 0px rgba(0, 0, 0, 0.04);
+
+    /* Padding */
+    padding: 0;
+
+    /* Overflow - smooth scrolling */
+    overflow-y: auto;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+
+    /* Display */
+    display: flex;
+    flex-direction: column;
+
+    /* Custom scrollbar styling */
+    scrollbar-width: thin;
+    scrollbar-color: #CCCCCC #FFFFFF;
+}
+
+/* Webkit scrollbar styling */
+.faq-accordion::-webkit-scrollbar {
+    width: 8px;
+}
+
+.faq-accordion::-webkit-scrollbar-track {
+    background: #FFFFFF;
+    border-radius: 24px;
+}
+
+.faq-accordion::-webkit-scrollbar-thumb {
+    background: #CCCCCC;
+    border-radius: 10px;
+}
+
+.faq-accordion::-webkit-scrollbar-thumb:hover {
+    background: #B3B3B3;
+}
+
+/* FAQ Item - no individual borders */
+.faq-item {
+    /* Full width */
+    width: 100%;
+
+    /* No background or borders - part of single card */
+    background: transparent;
+    border: none;
+
+    /* Transition */
+    transition: all 0.3s ease;
+}
+
+/* FAQ Question Button */
+.faq-question {
+    /* Full width */
+    width: 100%;
+
+    /* Padding */
+    padding: 20px 24px;
+
+    /* Display */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    /* Typography */
+    font-family: 'SF Pro Display', sans-serif;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 24px;
+    color: #000000;
+    text-align: left;
+
+    /* Reset */
+    background: transparent;
+    border: none;
+    cursor: pointer;
+
+    /* Transition */
+    transition: background 0.2s ease;
+}
+
+.faq-question:hover {
+    background: rgba(255, 245, 240, 0.5);
+}
+
+/* FAQ Icon (SVG) */
+.faq-icon {
+    /* Dimensions */
+    width: 24px;
+    height: 24px;
+
+    /* Flex shrink */
+    flex-shrink: 0;
+
+    /* Display */
+    display: block;
+}
+
+/* FAQ Separator - Horizontal Divider */
+.faq-separator {
+    /* Exact Figma dimensions */
+    width: 680px;
+    height: 1px;
+
+    /* Styling */
+    background: #E4E4E7;
+    border-radius: 2px;
+
+    /* Center horizontally */
+    margin: 0 auto;
+
+    /* Display */
+    display: block;
+
+    /* Position */
+    position: relative;
+    z-index: 10;
+
+    /* Flex shrink */
+    flex-shrink: 0;
+}
+
+/* FAQ Answer */
+.faq-answer {
+    /* Padding - extra bottom padding to separate from separator */
+    padding: 0 24px 24px 24px;
+
+    /* Animation */
+    animation: slideDown 0.3s ease;
+}
+
+@keyframes slideDown {
+    from {
+        opacity: 0;
+        transform: translateY(-10px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.faq-answer p {
+    /* Typography */
+    font-family: 'SF Pro Display', sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    color: #666666;
+
+    /* Reset */
+    margin: 0;
+}
+
+/* ===== Right Side Content ===== */
+.faq-right-content {
+    /* Dimensions */
+    width: 517px;
+
+    /* Display */
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 32px;
+
+    /* Vertical positioning - 160.91px from slider */
+    margin-top: 160.91px;
+}
+
+/* Right Heading */
+.faq-right-heading {
+    /* Exact Figma dimensions */
+    width: 517px;
+    height: 64px;
+
+    /* Typography */
+    font-family: 'SF Pro Display', sans-serif;
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 100%;
+    letter-spacing: 0%;
+    text-transform: capitalize;
+    color: #000000;
+
+    /* Reset */
+    margin: 0;
+}
+
+.faq-heading-bold {
+    /* Typography */
+    font-family: 'SF Pro Display', sans-serif;
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 100%;
+    letter-spacing: 0%;
+    text-transform: capitalize;
+    color: #331000;
+
+    /* Display on new line */
+    display: block;
+}
+
+/* Right Description */
+.faq-right-description {
+    /* Exact Figma dimensions */
+    width: 517px;
+    height: 87px;
+
+    /* Typography */
+    font-family: 'SF Pro Display', sans-serif;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 100%;
+    letter-spacing: 0%;
+    color: #1A1A1A;
+
+    /* Reset */
+    margin: 0;
+}
+
+/* CTA Pill Button */
+.faq-cta-pill {
+    /* Exact Figma dimensions */
+    width: 338.68px;
+    height: 76.18px;
+
+    /* Styling */
+    background: #FFDCCC;
+    border: none;
+    border-radius: 1708.79px;
+
+    /* Padding */
+    padding: 17.09px 27.34px;
+
+    /* Display */
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 13.67px;
+
+    /* Reset link styles */
+    text-decoration: none;
+    cursor: pointer;
+
+    /* Transition */
+    transition: all 0.3s ease;
+}
+
+.faq-cta-pill:hover {
+    background: #FFCCB3;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(51, 16, 0, 0.15);
+}
+
+/* CTA Text */
+.faq-cta-text {
+    /* Exact Figma dimensions */
+    width: 284px;
+    height: 42px;
+
+    /* Typography */
+    font-family: 'SF Pro Display', sans-serif;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 41.01px;
+    letter-spacing: 0%;
+    color: #331000;
+
+    /* Display */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}

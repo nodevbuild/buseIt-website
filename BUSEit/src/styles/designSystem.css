@@ -1,0 +1,139 @@
+/* ============================================
+   BUSEit Design System
+   Enterprise-level design tokens and variables
+   ============================================ */
+
+/* ===== Custom Fonts ===== */
+
+/* SF Pro Display - Multiple Weights */
+@font-face {
+  font-family: 'SF Pro Display';
+  src: url('/fonts/sf-pro-display/SFPRODISPLAYREGULAR.OTF') format('opentype');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'SF Pro Display';
+  src: url('/fonts/sf-pro-display/SFPRODISPLAYMEDIUM.OTF') format('opentype');
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'SF Pro Display';
+  src: url('/fonts/sf-pro-display/SFPRODISPLAYBOLD.OTF') format('opentype');
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+/* Mafle Type - Display Headlines */
+@font-face {
+  font-family: 'Mafle Type DEMO';
+  src: url('/fonts/mafle-type-demo/MafleTypeDEMO-Black.ttf') format('truetype');
+  font-weight: 900;
+  font-style: normal;
+  font-display: swap;
+}
+
+/* ===== Color Palette ===== */
+:root {
+  /* Primary Colors */
+  --vibe-orange-primary-500: #FF5202;
+  --neutral-grey-700: #4D4D4D;
+  --secondary-blue-50: #E8F7FD;
+
+  /* Background Colors */
+  --snow-white: #FFFFFF;
+  --background-cream: #FFF5F0;
+  --dark-brown: #331000;
+
+  /* Navbar Glass Effect */
+  --navbar-glass-bg: rgba(255, 255, 255, 0.63);
+
+  /* Semantic Colors */
+  --text-primary: #000000;
+  --text-secondary: #4D4D4D;
+  --text-inverse: #FFFFFF;
+}
+
+/* ===== Typography System ===== */
+:root {
+  /* Font Families */
+  --font-display: 'Mafle Type DEMO', sans-serif;
+  --font-body: 'SF Pro Display', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+
+  /* Font Weights */
+  --weight-light: 274;
+  --weight-regular: 400;
+  --weight-semibold: 590;
+  --weight-heavy: 860;
+  --weight-black: 900;
+
+  /* Font Sizes */
+  --text-xs: 14px;
+  --text-sm: 18px;
+  --text-base: 24px;
+  --text-lg: 28px;
+  --text-xl: 64px;
+}
+
+/* ===== Spacing System ===== */
+:root {
+  --spacing-xs: 7px;
+  --spacing-sm: 10px;
+  --spacing-md: 17px;
+  --spacing-lg: 20px;
+  --spacing-xl: 24px;
+}
+
+/* ===== Border Radius ===== */
+:root {
+  --radius-pill: 1000px;
+  --radius-card: 16px;
+}
+
+/* ===== Effects ===== */
+.glass-effect {
+  background: var(--navbar-glass-bg);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+}
+
+.glassmorphism {
+  background: rgba(255, 255, 255, 0.63);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+}
+
+/* ===== Global Resets ===== */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: var(--font-body);
+  background: var(--background-cream);
+  color: var(--text-primary);
+  line-height: 100%;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* ===== Utility Classes ===== */
+.text-uppercase {
+  text-transform: uppercase;
+}
+
+.font-display {
+  font-family: var(--font-display);
+}
+
+.font-body {
+  font-family: var(--font-body);
+}

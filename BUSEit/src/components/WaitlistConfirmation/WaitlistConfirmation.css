@@ -1,0 +1,159 @@
+/* ============================================
+   Waitlist Confirmation Page Styles
+   Exact Figma specifications
+   ============================================ */
+
+.waitlist-confirmation-page {
+    /* Full page container */
+    width: 100%;
+    min-height: 100vh;
+
+    /* Background */
+    background: #FFF5F0;
+
+    /* Centering */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    /* Padding */
+    padding: 40px 20px;
+}
+
+.confirmation-card {
+    /* Exact Figma dimensions - same as waitlist card */
+    width: 1027px;
+    height: 584px;
+
+    /* Styling */
+    background: #FFFFFF;
+    border-radius: 20px;
+    box-shadow: 0px 4px 30px 0px rgba(0, 0, 0, 0.25);
+
+    /* Display */
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+
+    /* No padding */
+    padding: 0;
+
+    /* Position for absolute children */
+    position: relative;
+    overflow: visible;
+}
+
+/* Confirmation Content */
+.confirmation-content {
+    /* Exact Figma dimensions */
+    width: 452px;
+    height: 193px;
+
+    /* Position */
+    position: absolute;
+    top: 195.5px;
+    left: 62px;
+
+    /* Display */
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+
+    /* Z-index */
+    z-index: 2;
+}
+
+/* Confirmation Heading */
+.confirmation-heading {
+    /* Exact Figma dimensions */
+    width: 415px;
+    height: 96px;
+
+    /* Typography */
+    font-family: 'Mafle Type DEMO', sans-serif;
+    font-weight: 900;
+    font-size: 48px;
+    line-height: 100%;
+    letter-spacing: 0%;
+    text-transform: uppercase;
+
+    /* Gradient text */
+    background: linear-gradient(135.99deg, #FF5202 9.69%, #D44200 97.72%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+
+    /* Reset */
+    margin: 0;
+}
+
+/* Place in Line Group */
+.place-in-line-group {
+    /* Exact Figma dimensions */
+    width: 452px;
+    height: 72px;
+
+    /* Display */
+    display: flex;
+    flex-direction: column;
+    gap: 0;
+}
+
+/* Place Label */
+.place-label {
+    /* Exact Figma dimensions */
+    width: 452px;
+    height: 24px;
+
+    /* Typography */
+    font-family: 'SF Pro Display', sans-serif;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 100%;
+    letter-spacing: 0%;
+    color: #1A1A1A;
+
+    /* Reset */
+    margin: 0;
+}
+
+/* Place Number */
+.place-number {
+    /* Exact Figma dimensions */
+    width: 452px;
+    height: 48px;
+
+    /* Typography */
+    font-family: 'SF Pro Display', sans-serif;
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 100%;
+    letter-spacing: 0%;
+    color: #1A1A1A;
+
+    /* Reset */
+    margin: 0;
+}
+
+/* Confirmation Illustration */
+.confirmation-illustration {
+    /* Same size as waitlist illustration */
+    width: 560px;
+    height: 560px;
+
+    /* Position - same as waitlist */
+    position: absolute;
+    bottom: 0;
+    left: 473px;
+
+    /* Display */
+    display: block;
+    object-fit: contain;
+
+    /* Z-index */
+    z-index: 10;
+
+    /* Prevent interaction */
+    pointer-events: none;
+}

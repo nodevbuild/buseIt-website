@@ -1,0 +1,114 @@
+/* ============================================
+   Join Waiting List Page - Mobile Responsive
+   iPhone 16 - Minimal Mobile Overrides Only
+   Updated: 2025-12-15 23:49
+   DOES NOT AFFECT DESKTOP (>768px)
+   ============================================ */
+
+@media (max-width: 768px) {
+
+    /* HIDE illustration on mobile only */
+    .waitlist-illustration {
+        display: none !important;
+    }
+
+    /* Make card responsive */
+    .waitlist-card {
+        width: calc(100vw - 16px) !important;
+        max-width: 370px !important;
+        height: auto !important;
+        flex-direction: column !important;
+        padding: 40px 24px 30px 24px !important;
+        box-shadow: 0px 4px 20px 0px rgba(0, 0, 0, 0.15) !important;
+    }
+
+    /* Center content on mobile */
+    .waitlist-left-content {
+        padding: 0 !important;
+        align-items: center !important;
+        width: 100% !important;
+        max-width: 322px !important;
+    }
+
+    /* Make text group responsive */
+    .waitlist-text-group {
+        width: 100% !important;
+        max-width: 322px !important;
+        height: auto !important;
+        align-items: center !important;
+        gap: 20px !important;
+    }
+
+    /* Smaller heading on mobile */
+    .waitlist-heading {
+        width: 100% !important;
+        max-width: 280px !important;
+        height: auto !important;
+        font-size: 32px !important;
+        text-align: center !important;
+    }
+
+    /* Smaller description */
+    .waitlist-description {
+        width: 100% !important;
+        max-width: 322px !important;
+        height: auto !important;
+        font-size: 14px !important;
+        text-align: center !important;
+    }
+
+    /* Form responsive */
+    .waitlist-form {
+        width: 100% !important;
+        max-width: 322px !important;
+        height: auto !important;
+        margin-top: 30px !important;
+        gap: 16px !important;
+    }
+
+    /* Stack form rows */
+    .form-row {
+        flex-direction: column !important;
+        gap: 16px !important;
+        height: auto !important;
+    }
+
+    /* Full width inputs */
+    .form-input,
+    .form-input-half,
+    .form-input-email {
+        width: 100% !important;
+        max-width: 322px !important;
+    }
+
+    /* Full width button */
+    .notify-button {
+        width: 100% !important;
+        max-width: 322px !important;
+    }
+}
+
+/* Smaller screens */
+@media (max-width: 360px) {
+    .waitlist-card {
+        width: calc(100vw - 20px) !important;
+        padding: 30px 20px !important;
+    }
+
+    .waitlist-heading {
+        font-size: 28px !important;
+    }
+
+    .waitlist-description {
+        font-size: 13px !important;
+    }
+
+    .waitlist-text-group,
+    .waitlist-form,
+    .form-input,
+    .form-input-half,
+    .form-input-email,
+    .notify-button {
+        max-width: 300px !important;
+    }
+}

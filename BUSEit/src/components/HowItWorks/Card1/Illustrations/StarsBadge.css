@@ -1,0 +1,24 @@
+/* ============================================
+   Stars Badge Component Styles
+   Direct PNG image with rotation - Exact Figma specs
+   ============================================ */
+
+.stars-badge {
+    /* Exact Figma dimensions */
+    width: 74.37px;
+    height: 74.37px;
+
+    /* Rotation - original -25.06deg now combined with container's 6deg */
+    transform: rotate(-19.06deg);
+    /* -25.06 + 6 = -19.06deg */
+
+    /* Display */
+    display: block;
+
+    /* Transitions */
+    transition: all 0.3s ease;
+}
+
+.stars-badge:hover {
+    transform: rotate(-25.06deg) scale(1.05);
+}

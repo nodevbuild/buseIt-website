@@ -1,0 +1,177 @@
+/* ============================================
+   Features Section - Mobile Responsive
+   Exact Figma Specifications
+   ============================================ */
+
+/* Mobile styles - ONLY for screens 768px and below */
+@media (max-width: 768px) {
+
+    /* Section Container */
+    .features-section {
+        padding: 60px 8px !important;
+        display: flex;
+        justify-content: center;
+    }
+
+    /* Features Container */
+    .features-container {
+        width: 100% !important;
+        max-width: 100%;
+
+        /* Layout */
+        display: flex !important;
+        flex-direction: column !important;
+        align-items: center !important;
+        gap: 30px !important;
+    }
+
+    /* Pill Badge */
+    .features-section .section-pill-features {
+        /* Exact Figma dimensions */
+        width: 71px !important;
+        height: 22px !important;
+
+        /* Styling */
+        border-radius: 1000px !important;
+        border: 0.5px solid #331000 !important;
+
+        /* Padding */
+        padding: 5px 10px !important;
+
+        /* Layout */
+        display: flex !important;
+        align-items: center !important;
+        justify-content: center !important;
+        gap: 10px !important;
+    }
+
+    /* Pill Text - "Features" */
+    .features-section .pill-text-features {
+        /* Exact Figma dimensions */
+        width: 51px !important;
+        height: 12px !important;
+
+        /* Typography */
+        font-family: 'SF Pro', sans-serif !important;
+        font-weight: 510 !important;
+        font-size: 12px !important;
+        line-height: 100% !important;
+        letter-spacing: 0% !important;
+        text-transform: capitalize !important;
+        color: #331000 !important;
+
+        /* Prevent text wrapping */
+        white-space: nowrap !important;
+    }
+
+    /* Main Heading - "The BUSEit Advantage" */
+    .features-heading,
+    .main-heading {
+        width: 393px !important;
+        max-width: 100%;
+        height: auto;
+
+        /* Typography */
+        font-family: 'SF Pro', sans-serif !important;
+        font-weight: 700 !important;
+        font-size: 24px !important;
+        line-height: 100% !important;
+        letter-spacing: 0% !important;
+        text-align: center !important;
+        text-transform: capitalize !important;
+        color: #331000 !important;
+
+        /* Reset */
+        margin: 0 !important;
+
+        /* 30px gap from pill */
+        margin-top: 30px !important;
+    }
+
+    /* Feature Cards Container - Grid */
+    .features-grid,
+    .feature-cards,
+    .cards-container {
+        width: 100% !important;
+
+        /* Layout - Stack vertically */
+        display: flex !important;
+        flex-direction: column !important;
+        align-items: center !important;
+        gap: 24px !important;
+    }
+
+    /* Individual Feature Card - All 6 cards */
+    .feature-card,
+    .card,
+    .card-1,
+    .card-2,
+    .card-3,
+    .card-4,
+    .card-5,
+    .card-6 {
+        width: calc(100vw - 16px) !important;
+        max-width: 100%;
+        height: auto !important;
+
+        /* Keep same size for all cards */
+        min-height: 200px;
+
+        /* Styling */
+        border-radius: 16px;
+        padding: 20px;
+
+        /* Layout */
+        display: flex !important;
+        flex-direction: column !important;
+        gap: 16px;
+
+        /* Ensure visibility */
+        visibility: visible !important;
+        opacity: 1 !important;
+    }
+
+    /* Feature Card Icon */
+    .feature-icon,
+    .card-icon {
+        width: 48px !important;
+        height: 48px !important;
+        flex-shrink: 0;
+    }
+
+    /* Feature Card Title */
+    .feature-title,
+    .card-title {
+        font-family: 'SF Pro', sans-serif !important;
+        font-weight: 700 !important;
+        font-size: 20px !important;
+        line-height: 120% !important;
+        margin: 0 !important;
+    }
+
+    /* Feature Card Description */
+    .feature-description,
+    .card-description {
+        font-family: 'SF Pro', sans-serif !important;
+        font-weight: 400 !important;
+        font-size: 14px !important;
+        line-height: 140% !important;
+        margin: 0 !important;
+    }
+}
+
+/* Smaller screens */
+@media (max-width: 360px) {
+
+    .features-heading,
+    .main-heading {
+        width: 320px !important;
+        font-size: 22px !important;
+    }
+
+    .feature-card,
+    .card {
+        width: calc(100vw - 20px) !important;
+        padding: 16px;
+    }
+}

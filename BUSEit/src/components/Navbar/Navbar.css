@@ -1,0 +1,167 @@
+/* ============================================
+   Navbar Component Styles
+   Glassmorphism effect with precise Figma specs
+   ============================================ */
+
+.navbar {
+    position: fixed;
+    top: 39px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 1000;
+    width: fit-content;
+}
+
+.navbar-container {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+
+    /* Responsive width with max from Figma */
+    width: auto;
+    max-width: 1286px;
+    min-width: 800px;
+    height: 61px;
+    padding: 17px;
+
+    /* Background color updated */
+    background: #FFF5F0;
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+
+    border-radius: 1000px;
+
+    /* Smooth transitions */
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+/* Logo Styles */
+.navbar-logo {
+    display: flex;
+    align-items: center;
+    margin-right: auto;
+}
+
+.logo-image {
+    width: 136px;
+    height: 31.00718116760254px;
+    object-fit: contain;
+}
+
+/* Navigation Links Container */
+.navbar-links {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+/* Individual Nav Link Styles */
+.nav-link {
+    /* Remove button defaults */
+    background: none;
+    border: none;
+    cursor: pointer;
+
+    /* Layout */
+    padding: 10px;
+    height: 41px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    /* Typography - Exact from Figma */
+    font-family: 'SF Pro Display', -apple-system, BlinkMacSystemFont, sans-serif;
+    font-weight: 274;
+    font-size: 18px;
+    line-height: 100%;
+    letter-spacing: 0%;
+    color: rgba(0, 0, 0, 1);
+
+    /* Transitions */
+    transition: all 0.2s ease;
+    border-radius: 8px;
+}
+
+.nav-link:hover {
+    background: rgba(0, 0, 0, 0.05);
+    transform: translateY(-1px);
+}
+
+.nav-link:active {
+    transform: translateY(0);
+}
+
+/* Contact Button Styles */
+.contact-button {
+    /* Layout - Exact from Figma */
+    height: 41px;
+    padding: 10px 20px;
+    border-radius: 1000px;
+
+    /* Remove button defaults */
+    border: none;
+    cursor: pointer;
+
+    /* Colors */
+    background: #331000;
+    color: rgba(255, 255, 255, 1);
+
+    /* Typography */
+    font-family: 'SF Pro Display', -apple-system, BlinkMacSystemFont, sans-serif;
+    font-weight: 590;
+    font-size: 18px;
+    line-height: 100%;
+    letter-spacing: 0%;
+
+    /* Transitions */
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.contact-button:hover {
+    background: #4a2000;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(51, 16, 0, 0.3);
+}
+
+.contact-button:active {
+    transform: translateY(0);
+    box-shadow: 0 2px 6px rgba(51, 16, 0, 0.2);
+}
+
+/* Responsive adjustments */
+@media (max-width: 1400px) {
+    .navbar-container {
+        width: 90vw;
+        max-width: 1286px;
+    }
+}
+
+@media (max-width: 768px) {
+    .navbar {
+        top: 20px;
+    }
+
+    .navbar-container {
+        padding: 12px;
+        height: auto;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .navbar-links {
+        order: 3;
+        width: 100%;
+        justify-content: space-around;
+        margin-top: 10px;
+    }
+
+    .nav-link {
+        font-size: 14px;
+        padding: 8px;
+    }
+
+    .contact-button {
+        font-size: 14px;
+        padding: 8px 16px;
+    }
+}

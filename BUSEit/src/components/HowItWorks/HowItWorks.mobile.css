@@ -1,0 +1,132 @@
+/* ============================================
+   How It Works Section - Mobile Responsive
+   Same navigation as desktop (arrows)
+   DOES NOT AFFECT DESKTOP
+   ============================================ */
+
+/* ONLY apply styles on mobile - 768px and below */
+@media (max-width: 768px) {
+
+    /* How It Works Section - 80px gap from hero footer */
+    .how-it-works-section {
+        padding-top: 80px;
+        padding-bottom: 40px;
+    }
+
+    /* ===== Pill Badge - Mobile ===== */
+    .how-it-works-section .section-pill {
+        /* Exact Figma dimensions */
+        width: 97px !important;
+        height: 22px !important;
+
+        /* Styling */
+        border-radius: 1000px !important;
+        border: 0.5px solid #331000 !important;
+
+        /* Padding */
+        padding: 5px 10px !important;
+
+        /* Layout */
+        display: flex !important;
+        align-items: center !important;
+        justify-content: center !important;
+        gap: 10px !important;
+    }
+
+    .how-it-works-section .pill-text {
+        /* Exact Figma dimensions */
+        width: 77px !important;
+        height: 12px !important;
+
+        /* Typography */
+        font-family: 'SF Pro', sans-serif !important;
+        font-weight: 510 !important;
+        font-size: 12px !important;
+        line-height: 100% !important;
+        letter-spacing: 0% !important;
+        text-transform: capitalize !important;
+        color: #331000 !important;
+
+        /* Prevent text wrapping */
+        white-space: nowrap !important;
+        overflow: hidden !important;
+        text-overflow: clip !important;
+    }
+
+    /* Navigation Arrows - Properly styled for mobile */
+    .navigation-arrows {
+        width: 162px !important;
+        height: 72px !important;
+        display: flex !important;
+        flex-direction: row !important;
+        justify-content: center !important;
+        align-items: center !important;
+        gap: 18px !important;
+        margin: 40px auto 0 auto !important;
+    }
+
+    .arrow-button {
+        width: 72px !important;
+        height: 72px !important;
+        border-radius: 50% !important;
+        border: 1.5px solid #FF5202 !important;
+        background: transparent !important;
+        display: flex !important;
+        align-items: center !important;
+        justify-content: center !important;
+        cursor: pointer;
+        padding: 0 !important;
+        position: relative !important;
+        flex-shrink: 0 !important;
+        transition: all 0.3s ease;
+        outline: none !important;
+    }
+
+    .arrow-button:active {
+        transform: scale(0.95);
+        background: rgba(255, 82, 2, 0.05) !important;
+    }
+
+    .arrow-icon {
+        width: 21.18px !important;
+        height: 10.56px !important;
+        position: absolute !important;
+        left: 25.41px !important;
+    }
+
+    /* Up Arrow positioning */
+    .arrow-button:first-child .arrow-icon {
+        top: 29.22px !important;
+    }
+
+    /* Down Arrow positioning */
+    .arrow-button:last-child .arrow-icon {
+        top: 32.22px !important;
+    }
+
+    /* Cards Container - Single card display */
+    .cards-container {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        overflow: visible;
+    }
+
+    .cards-wrapper {
+        display: flex;
+        justify-content: center;
+        width: 100%;
+    }
+
+    /* Individual Card - Fix text overflow */
+    .card-title {
+        word-wrap: break-word;
+        overflow-wrap: break-word;
+        hyphens: auto;
+    }
+
+    .card-description {
+        word-wrap: break-word;
+        overflow-wrap: break-word;
+    }
+}

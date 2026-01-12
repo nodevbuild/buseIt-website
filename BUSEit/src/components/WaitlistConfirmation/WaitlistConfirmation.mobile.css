@@ -1,0 +1,186 @@
+/* ============================================
+   Waitlist Confirmation Page - Mobile Responsive
+   iPhone 16 - Exact Mobile Specifications
+   Updated: 2025-12-15 23:44
+   ============================================ */
+
+@media (max-width: 768px) {
+
+    /* Page Container */
+    .waitlist-confirmation-page {
+        /* Full page */
+        width: 100% !important;
+        min-height: 100vh !important;
+
+        /* Background */
+        background: #FFF5F0 !important;
+
+        /* Centering */
+        display: flex !important;
+        justify-content: center !important;
+        align-items: center !important;
+
+        /* Padding */
+        padding: 20px 8px !important;
+    }
+
+    /* Confirmation Card */
+    .confirmation-card {
+        /* Mobile dimensions */
+        width: calc(100vw - 16px) !important;
+        max-width: 370px;
+        height: auto !important;
+        min-height: auto !important;
+
+        /* Styling */
+        background: #FFFFFF !important;
+        border-radius: 20px !important;
+        box-shadow: 0px 4px 20px 0px rgba(0, 0, 0, 0.15) !important;
+
+        /* Display - Stack vertically */
+        display: flex !important;
+        flex-direction: column !important;
+        align-items: center !important;
+        justify-content: center !important;
+
+        /* Padding - Increased for more height */
+        padding: 80px 24px !important;
+
+        /* Position */
+        position: relative !important;
+        overflow: visible !important;
+    }
+
+    /* Confirmation Content */
+    .confirmation-content {
+        /* Full width */
+        width: 100% !important;
+        max-width: 322px;
+        height: auto !important;
+
+        /* Position - reset absolute positioning */
+        position: relative !important;
+        top: auto !important;
+        left: auto !important;
+
+        /* Display */
+        display: flex !important;
+        flex-direction: column !important;
+        align-items: center !important;
+        gap: 30px !important;
+
+        /* Z-index */
+        z-index: 2 !important;
+    }
+
+    /* Confirmation Heading */
+    .confirmation-heading {
+        /* Mobile dimensions */
+        width: 100% !important;
+        max-width: 300px;
+        height: auto !important;
+
+        /* Typography */
+        font-family: 'Mafle Type DEMO', sans-serif !important;
+        font-weight: 900 !important;
+        font-size: 32px !important;
+        line-height: 100% !important;
+        letter-spacing: 0% !important;
+        text-transform: uppercase !important;
+        text-align: center !important;
+
+        /* Gradient text */
+        background: linear-gradient(135.99deg, #FF5202 9.69%, #D44200 97.72%) !important;
+        -webkit-background-clip: text !important;
+        -webkit-text-fill-color: transparent !important;
+        background-clip: text !important;
+
+        /* Reset */
+        margin: 0 !important;
+    }
+
+    /* Place in Line Group */
+    .place-in-line-group {
+        /* Mobile dimensions */
+        width: 100% !important;
+        max-width: 322px;
+        height: auto !important;
+
+        /* Display */
+        display: flex !important;
+        flex-direction: column !important;
+        align-items: center !important;
+        gap: 8px !important;
+    }
+
+    /* Place Label */
+    .place-label {
+        /* Mobile dimensions */
+        width: 100% !important;
+        max-width: 322px;
+        height: auto !important;
+
+        /* Typography */
+        font-family: 'SF Pro', sans-serif !important;
+        font-weight: 400 !important;
+        font-size: 16px !important;
+        line-height: 100% !important;
+        letter-spacing: 0% !important;
+        color: #1A1A1A !important;
+        text-align: center !important;
+
+        /* Reset */
+        margin: 0 !important;
+    }
+
+    /* Place Number */
+    .place-number {
+        /* Mobile dimensions */
+        width: 100% !important;
+        max-width: 322px;
+        height: auto !important;
+
+        /* Typography */
+        font-family: 'SF Pro', sans-serif !important;
+        font-weight: 700 !important;
+        font-size: 48px !important;
+        line-height: 100% !important;
+        letter-spacing: 0% !important;
+        color: #1A1A1A !important;
+        text-align: center !important;
+
+        /* Reset */
+        margin: 0 !important;
+    }
+
+    /* Confirmation Illustration - Hide on mobile */
+    .confirmation-illustration {
+        display: none !important;
+    }
+}
+
+/* Smaller mobile screens */
+@media (max-width: 360px) {
+    .confirmation-card {
+        width: calc(100vw - 20px) !important;
+        padding: 50px 20px !important;
+    }
+
+    .confirmation-heading {
+        font-size: 28px !important;
+        max-width: 280px;
+    }
+
+    .place-label {
+        font-size: 14px !important;
+    }
+
+    .place-number {
+        font-size: 40px !important;
+    }
+
+    .confirmation-content,
+    .place-in-line-group {
+        max-width: 300px !important;
+    }
+}
