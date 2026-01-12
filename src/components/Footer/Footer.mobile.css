@@ -1,0 +1,281 @@
+/* ============================================
+   Footer Section - Mobile Responsive
+   iPhone 16 - Exact Figma Specifications
+   Updated: 2025-12-15 23:34
+   ============================================ */
+
+@media (max-width: 768px) {
+
+    /* Footer Section */
+    .footer-section {
+        /* Padding */
+        padding: 40px 8px 20px 8px !important;
+
+        /* Background */
+        background: #FFFFFF !important;
+    }
+
+    /* Footer Container - Card */
+    .footer-container {
+        /* Exact Figma dimensions */
+        width: 370px !important;
+        max-width: calc(100vw - 16px);
+        height: 515px !important;
+
+        /* Styling */
+        background: #F2F2F2 !important;
+        border: 1px solid #FF5202 !important;
+        border-radius: 16px !important;
+
+        /* Padding */
+        padding: 24px !important;
+
+        /* Display */
+        display: flex !important;
+        flex-direction: column !important;
+        align-items: center !important;
+        justify-content: flex-start !important;
+
+        /* Position for watermark */
+        position: relative !important;
+        overflow: hidden !important;
+    }
+
+    /* Watermark - Show at bottom on mobile */
+    .footer-watermark {
+        /* Exact Figma dimensions */
+        width: 385px !important;
+        height: 63px !important;
+
+        /* Typography */
+        font-family: 'SF Pro', sans-serif !important;
+        font-weight: 860 !important;
+        font-size: 56px !important;
+        line-height: 100% !important;
+        letter-spacing: 0% !important;
+        text-align: center !important;
+        color: #FF9666 !important;
+
+        /* Opacity */
+        opacity: 0.15 !important;
+
+        /* Position - At bottom of card */
+        position: absolute !important;
+        top: 464.94px !important;
+        left: -7.5px !important;
+
+        /* Z-index - Behind content */
+        z-index: 0 !important;
+
+        /* Display */
+        display: block !important;
+
+        /* Prevent interaction */
+        user-select: none !important;
+        pointer-events: none !important;
+    }
+
+    /* Footer Content */
+    .footer-content {
+        width: 322px !important;
+        max-width: 100%;
+        height: auto !important;
+
+        /* Display */
+        display: flex !important;
+        flex-direction: column !important;
+        align-items: flex-start !important;
+        gap: 30px !important;
+
+        /* Position */
+        position: relative !important;
+        z-index: 1 !important;
+    }
+
+    /* Main Content Wrapper */
+    .footer-main-wrapper {
+        /* Reset desktop positioning */
+        width: 100% !important;
+        max-width: 322px;
+        height: auto !important;
+        position: relative !important;
+        top: auto !important;
+        left: auto !important;
+
+        /* Display */
+        display: flex !important;
+        flex-direction: column !important;
+        align-items: flex-start !important;
+        gap: 30px !important;
+    }
+
+    /* Left Section - Logo & Tagline */
+    .footer-left {
+        /* Exact Figma dimensions */
+        width: 322px !important;
+        max-width: 100%;
+        height: 82.18px !important;
+
+        /* Display */
+        display: flex !important;
+        flex-direction: column !important;
+        gap: 18px !important;
+
+        /* Reset desktop margin */
+        margin-top: 0 !important;
+    }
+
+    /* Footer Logo */
+    .footer-logo {
+        /* Exact Figma dimensions */
+        width: 149.89px !important;
+        height: 34.18px !important;
+
+        /* Display */
+        display: block !important;
+    }
+
+    /* Footer Tagline */
+    .footer-tagline {
+        /* Exact Figma dimensions */
+        width: 322px !important;
+        max-width: 100%;
+        height: 30px !important;
+
+        /* Typography */
+        font-family: 'SF Pro', sans-serif !important;
+        font-weight: 400 !important;
+        font-size: 12.26px !important;
+        line-height: 100% !important;
+        letter-spacing: 0% !important;
+        color: #584A4A !important;
+
+        /* Reset */
+        margin: 0 !important;
+    }
+
+    /* Footer Links Container */
+    .footer-links-container {
+        /* Exact Figma dimensions */
+        width: 322px !important;
+        max-width: 100%;
+        height: 286px !important;
+
+        /* Display - Single column on mobile */
+        display: flex !important;
+        flex-direction: column !important;
+        align-items: flex-start !important;
+        gap: 30px !important;
+
+        /* Reset desktop position */
+        position: relative !important;
+    }
+
+    /* Navigation Column - First 4 items */
+    .footer-nav-column {
+        /* Width for all items */
+        width: 322px !important;
+        max-width: 100%;
+        height: auto !important;
+
+        /* Display */
+        display: flex !important;
+        flex-direction: column !important;
+        align-items: flex-start !important;
+        gap: 16px !important;
+    }
+
+    /* Social Column - Last 4 items */
+    .footer-social-column {
+        /* Width for all items */
+        width: 322px !important;
+        max-width: 100%;
+        height: auto !important;
+
+        /* Display */
+        display: flex !important;
+        flex-direction: column !important;
+        align-items: flex-start !important;
+        gap: 16px !important;
+    }
+
+    /* Footer Link - Individual item */
+    .footer-link {
+        /* Auto width to fit content */
+        width: auto !important;
+        height: 20px !important;
+
+        /* Display */
+        display: flex !important;
+        flex-direction: row !important;
+        align-items: center !important;
+        gap: 8px !important;
+
+        /* Typography */
+        font-family: 'SF Pro', sans-serif !important;
+        font-weight: 510 !important;
+        font-size: 12.26px !important;
+        line-height: 100% !important;
+        letter-spacing: 0% !important;
+        color: #000000 !important;
+
+        /* Reset */
+        text-decoration: none !important;
+
+        /* Transition */
+        transition: opacity 0.2s ease !important;
+    }
+
+    .footer-link:hover {
+        opacity: 0.7 !important;
+    }
+
+    /* Footer Link Text - Specific widths */
+    .footer-link span {
+        /* Auto width */
+        width: auto !important;
+        height: 15px !important;
+
+        /* Typography */
+        font-family: 'SF Pro', sans-serif !important;
+        font-weight: 510 !important;
+        font-size: 12.26px !important;
+        line-height: 100% !important;
+        color: #000000 !important;
+
+        /* Prevent wrapping */
+        white-space: nowrap !important;
+    }
+
+    /* Footer Link Icon */
+    .footer-link-icon {
+        /* Exact Figma dimensions */
+        width: 20px !important;
+        height: 20px !important;
+
+        /* Display */
+        display: block !important;
+        flex-shrink: 0 !important;
+    }
+}
+
+/* Smaller mobile screens */
+@media (max-width: 360px) {
+    .footer-container {
+        width: calc(100vw - 20px) !important;
+        padding: 20px !important;
+    }
+
+    .footer-content,
+    .footer-left,
+    .footer-links-container,
+    .footer-nav-column,
+    .footer-social-column {
+        width: 100% !important;
+        max-width: 320px;
+    }
+
+    .footer-tagline {
+        width: 100% !important;
+    }
+}

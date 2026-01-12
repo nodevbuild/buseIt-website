@@ -1,0 +1,70 @@
+/* ============================================
+   Ordered Items Verified Card Styles
+   Exact Figma specifications
+   ============================================ */
+
+.ordered-items-card {
+    /* Exact dimensions */
+    width: 163.09px;
+    height: 96.58px;
+
+    /* Position */
+    position: absolute;
+    top: 16.53px;
+    left: 16.75px;
+
+    /* Styling */
+    background: #FFFFFF;
+    /* Opaque white */
+    border-radius: 5.2px;
+    padding: 5.11px;
+
+    /* Shadow */
+    box-shadow: 0px 4.09px 10.23px 0px rgba(0, 0, 0, 0.25);
+
+    /* Z-index */
+    z-index: 2;
+}
+
+/* Content Group */
+.card-content-group {
+    /* Dimensions */
+    width: 152.86px;
+    height: 86.35px;
+
+    /* Layout */
+    display: flex;
+    flex-direction: column;
+    gap: 4.22px;
+
+    /* Alignment */
+    align-items: flex-start;
+}
+
+/* Verify Icon */
+.verify-icon {
+    /* Dimensions */
+    width: 40.13px;
+    height: 40.13px;
+
+    /* Display */
+    display: block;
+}
+
+/* Card Text */
+.card-text {
+    /* Dimensions */
+    width: 122px;
+    height: 42px;
+
+    /* Typography */
+    font-family: 'SF Pro Display', sans-serif;
+    font-weight: 700;
+    font-size: 17.37px;
+    line-height: 120%;
+    text-transform: capitalize;
+    color: #331000;
+
+    /* Reset */
+    margin: 0;
+}

@@ -1,0 +1,80 @@
+/* ============================================
+   Navigation Arrows Component Styles
+   Exact Figma specifications
+   ============================================ */
+
+.navigation-arrows {
+    /* Container dimensions */
+    width: 162px;
+    height: 72px;
+
+    /* Layout */
+    display: flex;
+    flex-direction: row;
+    gap: 18px;
+
+    /* Alignment */
+    align-items: center;
+    justify-content: center;
+}
+
+/* Arrow Button */
+.arrow-button {
+    /* Exact dimensions */
+    width: 72px;
+    height: 72px;
+
+    /* Styling */
+    background: transparent;
+    border: 1.5px solid #FF5202;
+    border-radius: 50%;
+
+    /* Layout - relative for absolute positioning of icon */
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    /* Cursor */
+    cursor: pointer;
+
+    /* Remove default button styles */
+    padding: 0;
+    outline: none;
+
+    /* Transition */
+    transition: all 0.3s ease;
+}
+
+.arrow-button:hover {
+    background: rgba(255, 82, 2, 0.05);
+    transform: scale(1.05);
+}
+
+.arrow-button:active {
+    transform: scale(0.95);
+}
+
+/* Arrow Icons - Exact Figma positioning */
+.arrow-icon {
+    /* Exact dimensions from Figma */
+    width: 21.18px;
+    height: 10.56px;
+
+    /* Absolute positioning */
+    position: absolute;
+    left: 25.41px;
+
+    /* Stroke width */
+    stroke-width: 1.5px;
+}
+
+/* Up Arrow - top: 29.22px */
+.arrow-button:first-child .arrow-icon {
+    top: 29.22px;
+}
+
+/* Down Arrow - top: 32.22px */
+.arrow-button:last-child .arrow-icon {
+    top: 32.22px;
+}

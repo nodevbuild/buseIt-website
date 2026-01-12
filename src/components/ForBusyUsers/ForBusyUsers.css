@@ -1,0 +1,389 @@
+/* ============================================
+   For Busy Users Section Styles
+   Exact Figma specifications
+   ============================================ */
+
+.for-busy-users-section {
+    /* Full width */
+    width: 100%;
+
+    /* Spacing from navigation arrows: 127px */
+    margin-top: 127px;
+
+    /* Display */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    /* Background */
+    background: transparent;
+}
+
+.for-busy-users-container {
+    /* Exact Figma dimensions */
+    width: 1472px;
+    height: 965.92px;
+
+    /* Styling */
+    border-radius: 16px;
+    background: #FFF5F0;
+
+    /* Padding */
+    padding: 76px 93px;
+
+    /* Display */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+
+/* ===== Content Wrapper ===== */
+.content-wrapper-busy {
+    /* Layout */
+    display: flex;
+    flex-direction: row;
+    gap: 60px;
+    align-items: flex-start;
+
+    /* Full width */
+    width: 100%;
+
+    /* Spacing below - 58px from Figma */
+    margin-bottom: 58px;
+}
+
+/* ===== Left Content ===== */
+.left-content-busy {
+    /* Exact Figma dimensions */
+    width: 633px;
+    height: 575px;
+
+    /* Layout */
+    display: flex;
+    flex-direction: column;
+    gap: 45px;
+
+    /* Styling */
+    border-radius: 16px;
+
+    /* Flex */
+    flex-shrink: 0;
+}
+
+/* ===== Pill Badge ===== */
+.section-pill-busy {
+    /* Dimensions */
+    width: 137px;
+    height: 26px;
+
+    /* Styling */
+    border: 0.5px solid #331000;
+    border-radius: 1000px;
+    background: transparent;
+
+    /* Padding */
+    padding: 5px 10px;
+
+    /* Display */
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+
+    /* Spacing below pill - 58px from Figma */
+    margin-bottom: 58px;
+}
+
+.pill-text-busy {
+    /* Typography */
+    font-family: 'SF Pro Display', sans-serif;
+    font-weight: 510;
+    font-size: 16px;
+    line-height: 100%;
+    letter-spacing: 0%;
+    text-transform: capitalize;
+    color: #331000;
+
+    /* Display */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* ===== Header Group (Heading + Subtitle) ===== */
+.header-group-busy {
+    /* Exact Figma dimensions */
+    width: 633px;
+    height: 64px;
+
+    /* Layout */
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+/* ===== Main Heading ===== */
+.main-heading-busy {
+    /* Exact Figma dimensions */
+    width: 633px;
+    height: 32px;
+
+    /* Typography */
+    font-family: 'SF Pro Display', sans-serif;
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 100%;
+    letter-spacing: 0%;
+    text-transform: capitalize;
+    color: #331000;
+
+    /* Reset */
+    margin: 0;
+}
+
+/* ===== Subtitle ===== */
+.subtitle-busy {
+    /* Exact Figma dimensions */
+    width: 633px;
+    height: 24px;
+
+    /* Typography */
+    font-family: 'SF Pro Display', sans-serif;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 100%;
+    letter-spacing: 0%;
+    text-transform: capitalize;
+    color: #331000;
+
+    /* Reset */
+    margin: 0;
+}
+
+/* ===== Description ===== */
+.description-busy {
+    /* Exact Figma dimensions */
+    width: 633px;
+    height: 58px;
+
+    /* Typography */
+    font-family: 'SF Pro Display', sans-serif;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 100%;
+    letter-spacing: 0%;
+    color: #1A1A1A;
+
+    /* Reset */
+    margin: 0;
+}
+
+/* ===== Features List ===== */
+.features-list-busy {
+    /* Layout */
+    display: flex;
+    flex-direction: column;
+    gap: 45px;
+
+    /* Full width */
+    width: 633px;
+}
+
+/* Feature Item (Icon + Text) */
+.feature-item-busy {
+    /* Exact Figma dimensions */
+    width: 633px;
+    height: 91px;
+
+    /* Layout */
+    display: flex;
+    flex-direction: row;
+    gap: 21px;
+    align-items: center;
+}
+
+/* Feature Icon */
+.feature-icon-busy {
+    /* Exact Figma dimensions */
+    width: 40px;
+    height: 40px;
+
+    /* Display */
+    display: block;
+    object-fit: contain;
+    flex-shrink: 0;
+
+    /* Move icons down 13px */
+    margin-top: 40px;
+}
+
+/* Feature Text Container (Title + Description) */
+.feature-text-busy {
+    /* Exact Figma dimensions */
+    width: 577px;
+    height: 91px;
+
+    /* Layout */
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+
+    /* Flex */
+    flex: 1;
+}
+
+/* Feature Title */
+.feature-title-busy {
+    /* Typography */
+    font-family: 'SF Pro Display', sans-serif;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 41.01px;
+    letter-spacing: 0%;
+    color: #331000;
+
+    /* Reset */
+    margin: 0;
+}
+
+/* Feature Description */
+.feature-description-busy {
+    /* Exact Figma dimensions */
+    width: 577px;
+    height: 58px;
+
+    /* Typography */
+    font-family: 'SF Pro Display', sans-serif;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 100%;
+    letter-spacing: 0%;
+    color: #1A1A1A;
+
+    /* Reset */
+    margin: 0;
+}
+
+/* ===== CTA Button ===== */
+.cta-button-busy {
+    /* Exact Figma dimensions */
+    width: 312.69px;
+    height: 76.18px;
+
+    /* Styling */
+    background: #331000;
+    border-radius: 1708.79px;
+    border: none;
+
+    /* Padding - Exact from Figma */
+    padding: 17.09px 27.34px;
+
+    /* Display */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 13.67px;
+
+    /* Cursor */
+    cursor: pointer;
+
+    /* Transition */
+    transition: all 0.3s ease;
+}
+
+/* Button Text */
+.cta-button-text {
+    /* Exact Figma typography */
+    font-family: 'SF Pro Display', sans-serif;
+    font-weight: 400;
+    font-size: 22px;
+    line-height: 41.01px;
+    letter-spacing: 0.5px;
+    color: #FFFFFF;
+
+
+    /* Display */
+    display: flex;
+    align-items: center;
+
+    /* Keep text on single line */
+    white-space: nowrap;
+}
+
+/* BUSEit Bold Text */
+.cta-button-text-bold {
+    font-weight: 700;
+    margin: 0 4px;
+}
+
+/* Button Arrow Icon */
+.cta-button-arrow {
+    /* Exact Figma dimensions */
+    width: 27.34px;
+    height: 27.34px;
+
+    /* Display */
+    display: block;
+    object-fit: contain;
+}
+
+.cta-button-busy:hover {
+    background: #4A1800;
+    transform: translateY(-2px);
+    box-shadow: 0 8px 16px rgba(51, 16, 0, 0.2);
+}
+
+.cta-button-busy:active {
+    transform: translateY(0);
+}
+
+/* ===== Illustration Container ===== */
+.illustration-container-busy {
+    /* Dimensions */
+    width: 595.74px;
+    height: 595.74px;
+
+    /* Curved edges */
+    border-radius: 26px;
+    overflow: hidden;
+
+    /* Position for absolute children */
+    position: relative;
+
+    /* Display */
+    display: block;
+    flex-shrink: 0;
+}
+
+/* Background Illustration SVG */
+.background-illustration-busy {
+    /* Dimensions */
+    width: 595.74px;
+    height: 595.74px;
+
+    /* Position */
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    /* Display */
+    display: block;
+    z-index: 1;
+}
+
+/* Person Illustration */
+.person-illustration-busy {
+    /* Dimensions */
+    width: 493.52px;
+    height: 404.05px;
+
+    /* Position */
+    position: absolute;
+    top: 101.92px;
+    left: 51.11px;
+
+    /* Display */
+    display: block;
+    z-index: 2;
+}

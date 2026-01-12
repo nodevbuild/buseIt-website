@@ -1,0 +1,229 @@
+/* ============================================
+   Footer Section Styles
+   Exact Figma specifications
+   ============================================ */
+
+.footer-section {
+    /* Full width */
+    width: 100%;
+
+    /* Background */
+    background: #FFFFFF;
+
+    /* Padding - 40.02px top spacing, 8px bottom */
+    padding: 40.02px 0 10px 0;
+
+    /* Display */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer-container {
+    /* Exact Figma dimensions */
+    width: 1497px;
+    height: 313px;
+
+    /* Styling */
+    background: #F2F2F2;
+    border: 1px solid #FF5202;
+    border-radius: 16px;
+
+    /* Padding */
+    padding: 48px 60px;
+
+    /* Display */
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: space-between;
+
+    /* Position for watermark */
+    position: relative;
+    overflow: hidden;
+}
+
+/* Watermark Text */
+.footer-watermark {
+    /* Exact Figma dimensions */
+    width: 1502px;
+    height: 247px;
+
+    /* Typography */
+    font-family: 'SF Pro Display', sans-serif;
+    font-weight: 860;
+    font-size: 207.1px;
+    line-height: 100%;
+    letter-spacing: 0%;
+    color: #FF9666;
+
+    /* Opacity */
+    opacity: 0.15;
+
+    /* Position */
+    position: absolute;
+    top: 143.21px;
+    left: -6px;
+
+    /* Z-index - behind all content */
+    z-index: 0;
+
+    /* Prevent text selection */
+    user-select: none;
+    pointer-events: none;
+}
+
+/* Footer Content - Main layout */
+.footer-content {
+    /* Full dimensions */
+    width: 100%;
+    height: 100%;
+
+    /* Display */
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+
+    /* Position above watermark */
+    position: relative;
+    z-index: 1;
+}
+
+/* Main Content Wrapper - Logo + Links */
+.footer-main-wrapper {
+    /* Exact Figma dimensions */
+    width: 1129px;
+    height: 128px;
+
+    /* Position */
+    position: absolute;
+    top: 24px;
+    left: 124px;
+
+    /* Display */
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+
+    /* Z-index */
+    z-index: 1;
+}
+
+/* Left Section - Logo & Tagline */
+.footer-left {
+    /* Exact Figma dimensions */
+    width: 262px;
+    height: 101.18px;
+
+    /* Display */
+    display: flex;
+    flex-direction: column;
+    gap: 22px;
+
+    /* Position - relative within wrapper */
+    position: relative;
+
+    /* Vertical offset */
+    margin-top: 25.41px;
+}
+
+/* Footer Logo */
+.footer-logo {
+    /* Exact Figma dimensions */
+    width: 149.89px;
+    height: 34.18px;
+
+    /* Display */
+    display: block;
+}
+
+/* Footer Tagline */
+.footer-tagline {
+    /* Exact Figma dimensions */
+    width: 262px;
+    height: 45px;
+
+    /* Typography */
+    font-family: 'SF Pro Display', sans-serif;
+    font-weight: 400;
+    font-size: 12.26px;
+    line-height: 100%;
+    letter-spacing: 0%;
+    color: #742323;
+
+    /* Reset */
+    margin: 0;
+}
+
+/* Footer Links Container */
+.footer-links-container {
+    /* Exact Figma dimensions */
+    width: 401px;
+    height: 128px;
+
+    /* Display */
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+
+    /* Position - relative within wrapper */
+    position: relative;
+}
+
+/* Navigation & Social Columns */
+.footer-nav-column,
+.footer-social-column {
+    /* Exact dimensions */
+    width: 189px;
+    height: 128px;
+
+    /* Display */
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+/* Footer Link */
+.footer-link {
+    /* Container dimensions */
+    width: 189px;
+    height: 20px;
+
+    /* Display */
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 5px;
+
+    /* Typography */
+    font-family: 'SF Pro Display', sans-serif;
+    font-weight: 510;
+    font-size: 12.26px;
+    line-height: 100%;
+    letter-spacing: 0%;
+    color: #742323;
+
+    /* Reset link styles */
+    text-decoration: none;
+
+    /* Transition */
+    transition: opacity 0.2s ease;
+}
+
+.footer-link:hover {
+    opacity: 0.7;
+}
+
+/* Footer Link Icon */
+.footer-link-icon {
+    /* Icon sizing */
+    width: 20px;
+    height: 20px;
+
+    /* Display */
+    display: block;
+    flex-shrink: 0;
+}

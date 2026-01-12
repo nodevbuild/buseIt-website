@@ -1,0 +1,210 @@
+/* ============================================
+   Card 2 - Main Card Container Styles
+   Exact Figma hierarchy and specifications
+   Card2-specific class names to avoid conflicts
+   ============================================ */
+
+.card2-main-card {
+    /* Exact Figma dimensions */
+    width: 973.3px;
+    height: 446px;
+
+    /* Styling */
+    border-radius: 18.2px;
+    background: #FFFFFF;
+
+    /* Padding */
+    padding: 11.37px 13.65px 22.75px 13.65px;
+
+    /* Layout */
+    display: flex;
+    flex-direction: row;
+    gap: 38px;
+    /* Increased gap between illustration and text */
+
+    /* Shadow */
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.08);
+
+    /* Transition */
+    transition: all 0.3s ease;
+}
+
+.card2-main-card:hover {
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.12);
+}
+
+/* ===== Illustration Container ===== */
+.illustration-container-card2 {
+    /* Exact Figma dimensions */
+    width: 403.33px;
+    height: 425.17px;
+
+    /* Styling */
+    border-radius: 14.07px;
+    background: #FFF5F0;
+
+    /* Layout - absolute positioning for children */
+    position: relative;
+
+    /* Prevent shrinking */
+    flex-shrink: 0;
+
+    /* Overflow for cards */
+    overflow: visible;
+}
+
+/* Background Illustration - ABOVE CARDS */
+.background-illustration {
+    /* Position - fill container */
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    /* Dimensions */
+    width: 406.29px;
+    height: 424.69px;
+
+    /* Styling */
+    border-radius: 14.07px;
+
+    /* Display */
+    display: block;
+    z-index: 3;
+    /* Above cards */
+}
+
+/* Gift Box Decoration - ABOVE CARDS */
+.gift-box-decoration {
+    /* Position */
+    position: absolute;
+    top: 91.6px;
+    left: 295.46px;
+
+    /* Dimensions */
+    width: 56.26px;
+    height: 47.41px;
+
+    /* Display */
+    display: block;
+    z-index: 3;
+    /* Above cards */
+}
+
+/* Carry Bag Decoration - ABOVE CARDS */
+.carry-bag-decoration {
+    /* Position */
+    position: absolute;
+    top: 183.14px;
+    left: 108.78px;
+
+    /* Dimensions */
+    width: 45.23px;
+    height: 59.09px;
+
+    /* Display */
+    display: block;
+    z-index: 3;
+    /* Above cards */
+}
+
+/* ===== Card Content Section ===== */
+
+.card2-card-content {
+    /* Dimensions from Figma */
+    width: 517.09px;
+
+    /* Layout */
+    display: flex;
+    flex-direction: column;
+    gap: 18.2px;
+
+    /* Vertical centering */
+    justify-content: center;
+    align-items: flex-start;
+
+    /* Flex */
+    flex: 1;
+}
+
+/* Badge Container */
+.card2-badge-container {
+    /* Badge dimensions */
+    width: 54.6px;
+    height: 54.6px;
+
+    /* Orange background */
+    background: #FF5202;
+    border-radius: 27.3px;
+
+    /* Display */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    /* Flex shrink */
+    flex-shrink: 0;
+}
+
+/* Badge Number Text */
+.card2-badge-number {
+    /* Typography - exact Figma specs */
+    font-family: 'Mafle Type DEMO', 'Impact', sans-serif;
+    font-weight: 900;
+    font-size: 34.88px;
+    line-height: 100%;
+    color: #FFFFFF;
+
+    /* Center text */
+    text-align: center;
+
+    /* Ensure visibility */
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+/* Text Content Group */
+.card2-text-content {
+    /* Dimensions */
+    width: 517.09px;
+    height: 127.16px;
+
+    /* Layout */
+    display: flex;
+    flex-direction: column;
+    gap: 26.16px;
+}
+
+/* Card Heading */
+.card2-card-heading {
+    /* Dimensions */
+    width: 450px;
+    height: 55px;
+
+    /* Typography */
+    font-family: 'Mafle Type DEMO', 'Impact', sans-serif;
+    font-weight: 900;
+    font-size: 32px;
+    line-height: 100%;
+    text-transform: capitalize;
+    color: #292929;
+
+    /* Reset */
+    margin: 0;
+}
+
+/* Card Description */
+.card2-card-description {
+    /* Dimensions - 16px gap from right edge */
+    width: 501px;
+    height: 46px;
+
+    /* Typography */
+    font-family: 'SF Pro Display', sans-serif;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 120%;
+    color: #292929;
+
+    /* Reset */
+    margin: 0;
+}
