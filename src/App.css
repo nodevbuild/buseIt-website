@@ -1,0 +1,509 @@
+/* SF Pro Font */
+@font-face {
+  font-family: 'SF Pro';
+  src: url('/fonts/sf-pro-display/SFPRODISPLAYBOLD.OTF') format('opentype');
+  font-weight: 700;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'SF Pro';
+  src: url('/fonts/sf-pro-display/SFPRODISPLAYMEDIUM.OTF') format('opentype');
+  font-weight: 510;
+  font-style: normal;
+}
+
+/* Root styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  width: 100%;
+  height: 100%;
+  overflow-x: hidden;
+}
+
+body {
+  background-color: #FFFFFF;
+}
+
+.app-container {
+  position: relative;
+  min-height: 100vh;
+  width: 100%;
+  background-color: #FFFFFF;
+}
+
+.background-pattern {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 0;
+  pointer-events: none;
+  background-image: url('/images/Artwork.svg');
+  background-repeat: repeat;
+  background-position: center;
+  background-size: 100% auto;
+}
+
+.content {
+  position: relative;
+  z-index: 1;
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 15px;
+  padding-top: clamp(80px, 12vh, 120px);
+}
+
+/* MOBILE STYLES (DEFAULT - DYNAMIC) */
+
+.logo-container {
+  width: clamp(110px, 32vw, 160px);
+  padding: clamp(6px, 1.8vw, 14px);
+  background: #FFF5F0;
+  border-radius: 100px;
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: clamp(20px, 4vh, 40px);
+}
+
+.logo-container img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.hero-text-container {
+  width: clamp(200px, 65vw, 280px);
+  margin-bottom: clamp(15px, 3vh, 30px);
+}
+
+.hero-text-container img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.tagline {
+  width: clamp(280px, 90vw, 400px);
+  margin-bottom: clamp(15px, 3vh, 30px);
+  font-family: 'SF Pro', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+  font-weight: 700;
+  font-size: clamp(12px, 3.5vw, 16px);
+  line-height: 1.2;
+  text-align: center;
+  color: #4D4D4D;
+}
+
+.cta-button {
+  display: flex;
+  align-items: center;
+  gap: clamp(8px, 2vw, 14px);
+  padding: clamp(14px, 4vw, 20px) clamp(24px, 7vw, 36px);
+  background: #331000;
+  border-radius: 100px;
+  border: none;
+  cursor: pointer;
+  font-family: 'SF Pro', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+  font-weight: 510;
+  font-size: clamp(20px, 5vw, 26px);
+  line-height: 1.2;
+  color: #F2F2F2;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  margin-bottom: 8vh;
+}
+
+.cta-button:hover {
+  transform: scale(1.02);
+  box-shadow: 0 4px 12px rgba(51, 16, 0, 0.3);
+}
+
+.cta-button:active {
+  transform: scale(0.98);
+}
+
+.cta-button-icon {
+  width: clamp(24px, 6vw, 32px);
+  height: clamp(24px, 6vw, 32px);
+  flex-shrink: 0;
+}
+
+.footer-icons {
+  display: flex;
+  gap: clamp(12px, 4vw, 20px);
+  margin-top: auto;
+  padding-bottom: 5vh;
+}
+
+.icon-button {
+  width: clamp(45px, 12vw, 60px);
+  height: clamp(45px, 12vw, 60px);
+  padding: 0;
+  background: transparent;
+  border: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: transform 0.2s ease;
+}
+
+.icon-button:hover {
+  transform: scale(1.1);
+}
+
+.icon-button:active {
+  transform: scale(0.95);
+}
+
+.icon-svg {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+
+/* Update Landscape to include iPad Pro & Small Laptops (up to 1399px) */
+@media screen and (max-width: 1399px) and (orientation: landscape) {
+  /* ... existing landscape styles ... */
+
+  .content {
+    /* Force FULL control over layout */
+    position: relative !important;
+    width: 100vw !important;
+    min-height: 100vh !important;
+    height: 100% !important;
+    /* Allow scroll if needed */
+    padding: 20px 10px !important;
+    overflow-y: auto !important;
+    /* Enable scrolling for small screens */
+
+    /* Perfect Center Flexbox */
+    display: flex !important;
+    flex-direction: column !important;
+    justify-content: center !important;
+    align-items: center !important;
+    text-align: center !important;
+  }
+
+  /* Reset layout for ALL main children */
+  .logo-container,
+  .hero-text-container,
+  .tagline,
+  .cta-button,
+  .footer-icons {
+    position: static !important;
+    /* Kill absolute */
+    transform: none !important;
+    margin-left: auto !important;
+    margin-right: auto !important;
+    flex-shrink: 0 !important;
+  }
+
+  /* 1. Logo */
+  .logo-container {
+    display: flex !important;
+    width: auto !important;
+    height: auto !important;
+    margin-bottom: 2.5vh !important;
+    /* Optimized spacing */
+    padding: 6px 12px !important;
+    background: #FFF5F0 !important;
+    border-radius: 50px !important;
+    margin-top: 10px !important;
+    /* Safe top margin */
+  }
+
+  .logo-container img {
+    width: 55px !important;
+    /* Reverted to legible size */
+    height: auto !important;
+  }
+
+  /* 2. Hero Text */
+  .hero-text-container {
+    width: auto !important;
+    max-width: 32vh !important;
+    /* Slightly smaller to fit iPhone 5 */
+    margin-bottom: 2.5vh !important;
+  }
+
+  .hero-text-container img {
+    width: 100% !important;
+    height: auto !important;
+    margin: 0 auto !important;
+  }
+
+  /* 3. Tagline */
+  .tagline {
+    width: auto !important;
+    max-width: 80vw !important;
+    font-size: min(14px, 4vh) !important;
+    /* Reverted size */
+    margin-bottom: 3vh !important;
+    display: block !important;
+  }
+
+  /* 4. Button */
+  .cta-button {
+    display: flex !important;
+    width: auto !important;
+    padding: 10px 24px !important;
+    /* Reverted size */
+    font-size: min(20px, 5vh) !important;
+    gap: 8px !important;
+    margin-bottom: 3vh !important;
+  }
+
+  .cta-button-icon {
+    width: 20px !important;
+    height: 20px !important;
+  }
+
+  /* 5. Footer Icons */
+  .footer-icons {
+    display: flex !important;
+    gap: 20px !important;
+    /* Increased gap */
+    margin-top: 0 !important;
+    margin-bottom: 2vh !important;
+    /* Bottom padding */
+    padding-bottom: 10px !important;
+  }
+
+  .icon-button {
+    width: 40px !important;
+    /* Reverted size */
+    height: 40px !important;
+  }
+
+  /* SURFACE DUO / TALL LANDSCAPE OVERRIDE (Height > 500px) */
+  @media screen and (min-height: 500px) {
+    .content {
+      gap: 20px !important;
+    }
+
+    .hero-text-container {
+      max-width: 50vh !important;
+      /* Much larger for Duo */
+    }
+
+    .logo-container img {
+      width: 70px !important;
+    }
+
+    .tagline {
+      font-size: 18px !important;
+    }
+
+    .cta-button {
+      padding: 14px 32px !important;
+      font-size: 24px !important;
+    }
+  }
+}
+
+/* TABLET PORTRAIT ORIENTATION (768px - 1023px) */
+@media screen and (min-width: 768px) and (max-width: 1023px) and (orientation: portrait) {
+  .content {
+    position: relative !important;
+    width: 100vw !important;
+    left: 0 !important;
+    right: 0 !important;
+    min-height: 100vh !important;
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: center !important;
+    justify-content: flex-start !important;
+    padding: 140px 0 0 0 !important;
+    /* Zero side padding */
+    margin: 0 !important;
+    gap: 40px !important;
+    text-align: center !important;
+    overflow-x: hidden !important;
+  }
+
+  /* Reset positioning for tablet too */
+  .logo-container,
+  .hero-text-container,
+  .tagline,
+  .cta-button,
+  .footer-icons {
+    position: static !important;
+    transform: none !important;
+    margin-left: auto !important;
+    margin-right: auto !important;
+  }
+
+  .logo-container {
+    display: flex !important;
+    width: 220px !important;
+    height: auto !important;
+    padding: 16px !important;
+    margin-bottom: 0 !important;
+    /* Gap handles spacing */
+    background: #FFF5F0 !important;
+    border-radius: 100px !important;
+  }
+
+  .logo-container img {
+    width: 110px !important;
+    height: auto !important;
+  }
+
+  .hero-text-container {
+    width: 450px !important;
+    max-width: 80vw !important;
+    margin-bottom: 0 !important;
+  }
+
+  .hero-text-container img {
+    width: 100% !important;
+    height: auto !important;
+    margin: 0 auto !important;
+  }
+
+  .tagline {
+    width: 600px !important;
+    max-width: 90vw !important;
+    font-size: 24px !important;
+    display: block !important;
+    margin-bottom: 0 !important;
+  }
+
+  .cta-button {
+    display: flex !important;
+    padding: 24px 48px !important;
+    font-size: 32px !important;
+    gap: 16px !important;
+    border-radius: 999px !important;
+    margin-bottom: 0 !important;
+  }
+
+  .cta-button-icon {
+    width: 36px !important;
+    height: 36px !important;
+  }
+
+  .footer-icons {
+    display: flex !important;
+    gap: 30px !important;
+    padding-bottom: 60px !important;
+    margin-top: auto !important;
+    /* Push to bottom if space allows */
+  }
+
+  .icon-button {
+    width: 70px !important;
+    height: 70px !important;
+  }
+}
+
+/* DESKTOP STYLES (1400px and up - Large Desktops) */
+@media (min-width: 1400px) {
+  .background-pattern {
+    background-size: auto;
+  }
+
+  .content {
+    display: block;
+    padding: 0;
+  }
+
+  .logo-container {
+    position: absolute;
+    top: 52px;
+    left: 688px;
+    width: 136px;
+    height: auto;
+    padding: 0;
+    background: transparent;
+    border-radius: 0;
+    backdrop-filter: none;
+    -webkit-backdrop-filter: none;
+    margin-bottom: 0;
+  }
+
+  .logo-container img {
+    width: 100%;
+    height: auto;
+  }
+
+  .hero-text-container {
+    position: absolute;
+    top: 153px;
+    left: 622.49px;
+    width: 265.56px;
+    height: auto;
+    margin-bottom: 0;
+  }
+
+  .hero-text-container img {
+    width: 100%;
+    height: auto;
+  }
+
+  .tagline {
+    position: absolute;
+    top: 497.35px;
+    left: 489.27px;
+    width: 532px;
+    height: auto;
+    font-size: 20px;
+    line-height: 1;
+    margin-bottom: 0;
+  }
+
+  .cta-button {
+    position: absolute;
+    top: 541.35px;
+    left: 626.82px;
+    width: 256.91px;
+    height: 69px;
+    padding: 21.05px 33.69px;
+    font-size: 28px;
+    line-height: 1.8;
+    gap: 16.84px;
+    margin-bottom: 0;
+    white-space: nowrap;
+  }
+
+  .cta-button:hover {
+    transform: scale(1.02);
+  }
+
+  .cta-button:active {
+    transform: scale(0.98);
+  }
+
+  .cta-button-icon {
+    width: 33.69px;
+    height: 33.69px;
+  }
+
+  .footer-icons {
+    position: absolute;
+    top: 690.35px;
+    left: 614.08px;
+    gap: 17.35px;
+    margin-top: 0;
+    padding-bottom: 0;
+  }
+
+  .icon-button {
+    width: 57.58px;
+    height: 57.58px;
+  }
+}
